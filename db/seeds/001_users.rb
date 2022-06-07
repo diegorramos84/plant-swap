@@ -2,7 +2,7 @@ require 'faker'
 User.destroy_all
 puts "Destroying Users"
 
-User.create!(
+user1 = User.create!(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     address: "3 Acorn Lodge, 21 Fulready Road",
@@ -12,7 +12,7 @@ User.create!(
     average_rating: rand(1..5)
 )
 
-User.create!(
+user2 = User.create!(
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "24 St Margarets Road",
@@ -22,7 +22,7 @@ User.create!(
   average_rating: rand(1..5)
 )
 
-User.create!(
+user3 = User.create!(
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "6 Cowper Avenue",
@@ -32,7 +32,7 @@ User.create!(
   average_rating: rand(1..5)
 )
 
-User.create!(
+user4 = User.create!(
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "75 Hampton Road",
@@ -42,7 +42,7 @@ User.create!(
   average_rating: rand(1..5)
 )
 
-User.create!(
+user5 = User.create!(
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "114 Plashet Road",
