@@ -1,5 +1,5 @@
 Plant.create!(
-  user_id: user1.id,
+  user_id: user1[:id],
   category:"Other",
   type:"Evergreen shrub",
   botanical_name:"Monstera deliciosa",
@@ -12,7 +12,7 @@ Plant.create!(
 )
 
 Plant.create!(
-  user_id: user2.id,
+  user_id: user2[:id],
   category:"Hanging & climbing",
   type:"Evergreen vine",
   botanical_name:"Epipremnum aureum",
@@ -25,7 +25,7 @@ Plant.create!(
 )
 
 Plant.create!(
-  user_id: user3.id,
+  user_id: user3[:id],
   category:"Fern",
   type:"Evergreen shrub",
   botanical_name:"Nephrolepis Exaltata",
@@ -38,7 +38,7 @@ Plant.create!(
 )
 
 Plant.create!(
-  user_id: user4.id,
+  user_id: user4[:id],
   category:"Cacti & succulents",
   type:"",
   botanical_name:"Euphorbia",
@@ -51,7 +51,7 @@ Plant.create!(
 )
 
 Plant.create!(
-  user_id: user5.id,
+  user_id: user5[:id],
   category:"Hanging & climbing",
   type:"",
   botanical_name:"Scindapsus pictus",
