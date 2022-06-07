@@ -32,7 +32,7 @@ class PlantsController < ApplicationController
 
   def destroy
     @plant.destroy
-    redirect_to my_garden_path,status: :see_other
+    redirect_to my_garden_path, status: :see_other
   end
 
   def users_garden
@@ -47,6 +47,6 @@ class PlantsController < ApplicationController
 
   def plant_params
     params.require(:plant).permit(:category, :type, :botanical_name, :common_name, :description, :light_conditions,
-                                  :mature_height, :quantity, :indoor, photos: [])
+                                  :mature_height, :quantity, :indoor)
   end
 end
