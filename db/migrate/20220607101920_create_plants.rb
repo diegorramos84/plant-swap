@@ -2,7 +2,7 @@ class CreatePlants < ActiveRecord::Migration[7.0]
   def change
     create_table :plants do |t|
       t.string :category
-      t.string :type
+      t.string :plant_type
       t.string :botanical_name
       t.string :common_name
       t.text :description

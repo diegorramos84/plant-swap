@@ -1,6 +1,6 @@
 require 'faker'
-User.destroy_all
-puts "Destroying Users"
+# User.destroy_all
+# puts "Destroying Users"
 
 user1 = User.create!(
     first_name: Faker::Name.first_name,
@@ -51,3 +51,9 @@ user5 = User.create!(
   password: "123456",
   average_rating: rand(1..5)
 )
+
+@user1 = user1
+@user2 = user2
+@user3 = user3
+@user4 = user4
+@user5 = user5
