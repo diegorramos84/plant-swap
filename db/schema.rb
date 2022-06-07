@@ -11,7 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_07_102755) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_07_103034) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,10 +23,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_07_102755) do
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
-   
-ActiveRecord::Schema[7.0].define(version: 2022_06_07_101920) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+
+  create_table "bookings", force: :cascade do |t|
+    t.string "booking_status"
+    t.bigint "user_id", null: false
+    t.bigint "plant_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["plant_id"], name: "index_bookings_on_plant_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
+  end
 
   create_table "plants", force: :cascade do |t|
     t.string "category"
@@ -61,6 +67,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_07_101920) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "bookings", "plants"
+  add_foreign_key "bookings", "users"
   add_foreign_key "reviews", "users"
   add_foreign_key "plants", "users"
 end
