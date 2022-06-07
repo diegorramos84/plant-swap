@@ -1,0 +1,11 @@
+<h1><%= @user.first_name %>'s profile</h1>
+
+<h2>Rating: <%= @user.average_rating %> </h2>
+
+<% @user.plants.each do |plant| %>
+  <%= plant.common_name %>
+    <% if plant.user == current_user %>
+      <%= link_to "Edit", edit_plant_path(plant) %>
+      <%= link_to "Delete", plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  %>
+    <% end %>
+<% end %>

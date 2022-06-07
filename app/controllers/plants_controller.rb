@@ -35,10 +35,6 @@ class PlantsController < ApplicationController
     redirect_to my_garden_path, status: :see_other
   end
 
-  def users_garden
-    @plants = Plant.where(user: current_user)
-  end
-
   private
 
   def set_plant

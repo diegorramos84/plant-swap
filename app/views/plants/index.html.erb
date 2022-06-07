@@ -1,5 +1,11 @@
 <h1>Plants Index Page</h1>
 
+<%= link_to "List a plant", new_plant_path %>
+
+<hr>
+
 <% @plants.each do |plant| %>
-  <li><%= link_to plant.common_name, plant_path(plant) %></li>
+    <li><%= link_to plant.common_name, plant_path(plant) %></li>
+    <%= link_to "See user's profile", user_path(plant.user) %>
+    <hr>
 <% end %>
