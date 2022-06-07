@@ -10,13 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema[7.0].define(version: 2022_06_07_103034) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-=======
-
 ActiveRecord::Schema[7.0].define(version: 2022_06_07_132953) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,12 +42,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_07_132953) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-
-ActiveRecord::Schema[7.0].define(version: 2022_06_07_103034) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
->>>>>>> 51d5170b9e530f6492e5aa43aaffa10a5e34bcdd
   create_table "bookings", force: :cascade do |t|
     t.string "booking_status"
     t.bigint "user_id", null: false
@@ -67,7 +54,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_07_103034) do
 
   create_table "plants", force: :cascade do |t|
     t.string "category"
-    t.string "plant_type"
+    t.string "type"
     t.string "botanical_name"
     t.string "common_name"
     t.text "description"
