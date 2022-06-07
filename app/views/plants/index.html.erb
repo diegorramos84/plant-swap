@@ -1,0 +1,5 @@
+<h1>Plants Index Page</h1>
+
+<% @plants.each do |plant| %>
+  <li><%= link_to plant.common_name, plant_path(plant) %></li>
+<% end %>
