@@ -1,14 +1,19 @@
-.navbar-landing {
-  height: 75px;
+.navbar-pages {
+  height: 100px;
   display: flex;
   justify-content: space-evenly;
-}
+  background-color: #FFB7BC;}
 
-.navbar-landing .navbar-collapse {
+.navbar-pages .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-landing .navbar-brand img {
-  width: 380px;
-  margin-left: 500px;
+.navbar-pages .navbar-brand img {
+  width: 450px;
+  margin-left: 470px;
+  margin-top: 10px;
+}
+
+.navbar-icons {
+  color: black;
 }
