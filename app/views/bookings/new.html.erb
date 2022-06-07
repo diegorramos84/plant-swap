@@ -1,12 +1,7 @@
 <div class="container">
-  <h1>Order your plant or cutting from <%= @plant.common_name %>, grown by <%= @user.first_name %> <%= @user.last_name %></h1>
+  <h1>Order your plant or cutting from <%= @plant.common_name %>, grown by <%= @plant.user.first_name %> <%= @plant.user.last_name %></h1>
 
 <%= simple_form_for [@plant, @booking] do |f| %>
-  <%= f.input :amount, as: :integer, html5: true%>
+  <%= f.input :booking_quantity, collection: 0..@plant.quantity %>
   <%= f.button :submit, class: "btn btn-flat" %>
 <% end %>
-
-
- <%# if amount is less than plant.quantity block submit, add error message %>
-	if :amount < plant.quantity
-		error

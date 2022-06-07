@@ -11,13 +11,13 @@ class BookingsController < ApplicationController
     @booking.plant_id = @plant.id
     @booking.user_id = @user.id
     if @booking.save!
-      redirect_to renter_bookings_path(@plant)
+	    redirect_to my_bookings_path(@plant)
     else
       render :new
     end
   end
 
-  def buyer_bookings
+  def my_bookings
     @bookings = Booking.all
   end
 
@@ -25,10 +25,13 @@ class BookingsController < ApplicationController
     params.require(:booking).permit(:booking_status, :plant_id, :status, :format)
   end
 
-  #  def reply_buy
-  #  @booking = Booking.find(params[:format])
-  #***  @booking.buy_status = params[:status]
-  #  @booking.save
-  #  redirect_to buyer_bookings_path, notice: "Rent status changed to #{params[:status]}"
-  # end
+  def reply_buy
+    @booking = Booking.find(params[:format])
+    @booking.buy_status = params[:status]
+    @booking.save
+    if params[:status] == 'accepted'
+      @plant.quantity -= params[:booking_quantity]
+    end
+    redirect_to my_bookings_path, notice: "Rent status changed to #{params[:status]}"
+  end
 end
