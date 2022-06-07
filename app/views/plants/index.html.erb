@@ -1,5 +1,9 @@
 <h1>Plants Index Page</h1>
 
 <% @plants.each do |plant| %>
-  <li><%= link_to plant.common_name, plant_path(plant) %></li>
+  <% if plant.photo.attached? %>
+    <%= plant.common_name %>
+    <%= cl_image_tag plant.photo.key, height: 300, width: 400, crop: :fill %>
+    <li><%= link_to plant.common_name, plant_path(plant) %></li>
+  <% end %>
 <% end %>

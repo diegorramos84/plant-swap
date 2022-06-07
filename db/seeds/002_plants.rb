@@ -1,4 +1,4 @@
-Plant.create!(
+plant1 = Plant.create!(
   user_id: @user1[:id],
   category: "Other",
   plant_type: "Evergreen shrub",
@@ -11,7 +11,12 @@ Plant.create!(
   indoor: true
 )
 
-Plant.create!(
+url = "https://res.cloudinary.com/lardocelar/image/upload/v1654610144/cheese_zd0lro.png"
+photo = URI.open(url)
+plant1.photo.attach(io: photo, filename: "plant.jpg", content_type: "image/png")
+plant1.save
+
+plant2 = Plant.create!(
   user_id: @user2[:id],
   category:"Hanging & climbing",
   plant_type:"Evergreen vine",
@@ -23,8 +28,12 @@ Plant.create!(
   quantity: 5,
   indoor: true
 )
+url = "https://res.cloudinary.com/lardocelar/image/upload/v1654610143/devil_k6i5id.jpg"
+photo = URI.open(url)
+plant2.photo.attach(io: photo, filename: "plant.jpg", content_type: "image/png")
+plant2.save
 
-Plant.create!(
+plant3 = Plant.create!(
   user_id: @user3[:id],
   category:"Fern",
   plant_type:"Evergreen shrub",
@@ -36,8 +45,12 @@ Plant.create!(
   quantity: 2,
   indoor: true
 )
+url = "https://res.cloudinary.com/lardocelar/image/upload/v1654610143/boston_bqgmwx.jpg"
+photo = URI.open(url)
+plant3.photo.attach(io: photo, filename: "plant.jpg", content_type: "image/png")
+plant3.save
 
-Plant.create!(
+plant4 =Plant.create!(
   user_id: @user4[:id],
   category:"Cacti & succulents",
   plant_type:"",
@@ -50,7 +63,12 @@ Plant.create!(
   indoor: true
 )
 
-Plant.create!(
+url = "https://res.cloudinary.com/lardocelar/image/upload/v1654610143/euph_z4cdy4.jpg"
+photo = URI.open(url)
+plant4.photo.attach(io: photo, filename: "plant.jpg", content_type: "image/png")
+plant4.save
+
+plant5 = Plant.create!(
   user_id: @user5[:id],
   category:"Hanging & climbing",
   plant_type:"",
@@ -62,3 +80,7 @@ Plant.create!(
   quantity: 4,
   indoor: true
 )
+url = "https://res.cloudinary.com/lardocelar/image/upload/v1654610143/satin_k7pkt5.jpg"
+photo = URI.open(url)
+plant5.photo.attach(io: photo, filename: "plant.jpg", content_type: "image/png")
+plant5.save
