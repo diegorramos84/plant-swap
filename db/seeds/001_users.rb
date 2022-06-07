@@ -52,5 +52,8 @@ user5 = User.create!(
   average_rating: rand(1..5)
 )
 
-puts user3[:id]
-puts user2[:id]
+@user1 = user1
+@user2 = user2
+@user3 = user3
+@user4 = user4
+@user5 = user5
