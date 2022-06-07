@@ -1,0 +1,7 @@
+<h1>My garden</h1>
+
+<% @plants.each do |plant| %>
+  <li><%= plant.common_name  %></li>
+  <%= link_to "Edit", edit_plant_path(plant) %>
+  <%= link_to "Delete", plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  %>
+<% end %>
