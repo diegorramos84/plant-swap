@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-pages">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to plants_path, class: "navbar-brand" do %>
       <%= image_tag "shared/logo.png" %>
     <% end %>
 
@@ -24,6 +24,7 @@
             <%= link_to "Messages", "#", class: "nav-link" %>
           </li>
           <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-bs-toggle="dropdown"><%= current_user.username %></a>
             <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Action", "#", class: "dropdown-item" %>
