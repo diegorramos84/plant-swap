@@ -55,7 +55,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_07_132953) do
 
   create_table "plants", force: :cascade do |t|
     t.string "category"
-    t.string "type"
+    t.string "plant_type"
     t.string "botanical_name"
     t.string "common_name"
     t.text "description"
