@@ -9,12 +9,16 @@
 }
 
 .navbar-pages .navbar-brand img {
-  width: 580px;
-  margin-left: 420px;
+  width: 370px;
+  margin-left: 100px;
   margin-top: 10px;
 }
 
 .navbar-icons a {
   color: #ffb7bc;
   margin-right: 12px;
+}
+
+.navbar-icons a:hover {
+  opacity: 0.5;
 }
