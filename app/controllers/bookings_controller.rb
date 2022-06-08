@@ -17,8 +17,9 @@ class BookingsController < ApplicationController
     end
   end
 
-  def my_bookings
-    @bookings = Booking.all
+  def index
+    @bookings = Booking.where(user: current_user)
+    @plants = Plant.where(user: current_user)
   end
 
   def booking_params
