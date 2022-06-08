@@ -1,8 +1,11 @@
- <div class="landing-nav">
-    <%= render "shared/landing_navbar" %>
+<div class="landing-nav">
+  <%= render "shared/landing_navbar" %>
+  <%# <%= image_tag "shared/logo.png" %>
+  <%= link_to plants_path do %>
     <%= image_tag "shared/logo.png" %>
-  </div>
-<div class="home-container">
+  <% end %>
+</div>
 
+<div class="home-container">
   <%= image_tag "shared/landing_description.png" %>
 </div>
