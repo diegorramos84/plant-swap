@@ -32,7 +32,7 @@
 <% @plants.each do |plant| %>
   <% plant.bookings.each do |booking| %>
     <p><%= "Plant: #{booking.plant.common_name}" %><p>
-    <p><%= "Quantity:" booking.booking_quantity %><p>
+    <p><%= "Quantity: #{booking.booking_quantity}" %><p>
     <p><%= "Plant owner: #{booking.user.first_name} #{booking.user.last_name}" %><p>
     <p><%= "Owner's address: #{booking.user.address}, #{booking.user.postcode}" %><p>
     <% end %>
