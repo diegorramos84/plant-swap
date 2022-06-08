@@ -19,7 +19,7 @@
 
 <p>Add a review</p>
 <%= simple_form_for [@user, @review] do |f| %>
-  <%= f.input :rating %>
+  <%= f.input :rating, collection: 1..5 %>
   <%= f.input :content %>
   <%= f.submit "Submit review", class: "btn btn-primary" %>
 <% end %>
@@ -27,7 +27,7 @@
 <br>
 
 <% @user.reviews.each do |review| %>
-  <p>Rating:<%= review.rating.to_i %></p>
+  <p>Rating: <%= review.rating.to_i %></p>
   <p><%= review.content %></p>
   <hr>
 <% end %>
