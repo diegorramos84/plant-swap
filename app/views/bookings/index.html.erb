@@ -2,7 +2,7 @@
 
 <% @bookings.each do |booking| %>
   <%= booking.plant.common_name %>
-  <%= booking.plant.user %>
+  <%= booking.plant.user.first_name %>
   <%# <% @plant = Plant.find(booking.plant_id) %>
   <%# <% if current_user.id == booking.plant.user.id %> %>
       <%# <p><%= "Plant: #{@plant.common_name}"</p> %> %>
@@ -31,9 +31,9 @@
 
 <% @plants.each do |plant| %>
   <% plant.bookings.each do |booking| %>
-   <%= booking.user %>
-   <%= booking.user.last_name %>
-   <%= booking.user.address %>
-   <%= booking.user.postcode %>
-   <% end %>
+    <p><%= "Plant: #{booking.plant.common_name}" %><p>
+    <p><%= "Quantity:" booking.booking_quantity %><p>
+    <p><%= "Plant owner: #{booking.user.first_name} #{booking.user.last_name}" %><p>
+    <p><%= "Owner's address: #{booking.user.address}, #{booking.user.postcode}" %><p>
+    <% end %>
 <% end %>

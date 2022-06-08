@@ -23,7 +23,7 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:booking_status, :plant_id, :status, :format)
+    params.require(:booking).permit(:booking_status, :plant_id, :booking_quantity, :status, :format)
   end
 
   def reply_buy
