@@ -1,11 +1,13 @@
 <h1>Plant show page</h1>
-
-<p>Category: <%= @plant.category %></p>
-<p>Plant type: <%= @plant.plant_type %></p>
-<p>Description: <%= @plant.description %></p>
-<p>Botanical name: <%= @plant.botanical_name %></p>
-<p>Common name: <%= @plant.common_name %></p>
-<p>Light conditions: <%= @plant.light_conditions %></p>
-<p>Mature height: <%= @plant.mature_height %></p>
-<p>Quantity: <%= @plant.quantity %></p>
-<p>Indoor: <%= @plant.indoor %></p>
+<div>
+  <%= cl_image_tag @plant.photo.key, height: 300, width: 400, crop: :fill %>
+  <p>Category: <%= @plant.category %></p>
+  <p>Plant type: <%= @plant.plant_type %></p>
+  <p>Description: <%= @plant.description %></p>
+  <p>Botanical name: <%= @plant.botanical_name %></p>
+  <p>Common name: <%= @plant.common_name %></p>
+  <p>Light conditions: <%= @plant.light_conditions %></p>
+  <p>Mature height: <%= @plant.mature_height %></p>
+  <p>Quantity: <%= @plant.quantity %></p>
+  <p>Indoor: <%= @plant.indoor %></p>
+</div>

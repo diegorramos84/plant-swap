@@ -1,13 +1,13 @@
 class ReviewsController < ApplicationController
   def new
-    @user = User.find(params[:user_id])
+    @booking = Booking.find(params[:booking_id])
     @review = Review.new
   end
 
   def create
-    @user = User.find(params[:user_id])
+    @booking = Booking.find(params[:booking_id])
     @review = Review.new(review_params)
-    @review.user = @user
+    @review.booking = @booking
     @review.save
   end
 
@@ -17,6 +17,6 @@ class ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:review).permit(:content, :rating)
+    params.require(:review).permit(:rating, :content)
   end
 end
