@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   get '/reply_booking', to: 'bookings#reply_buy'
   get '/my_bookings', to: 'bookings#index'
+  resources :chatrooms, only: :show
 
   resources :plants do
     resources :bookings, only: %i[new create] do
