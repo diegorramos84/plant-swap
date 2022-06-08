@@ -3,7 +3,11 @@ class PlantsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @plants = Plant.all
+    if params[:query].present?
+      @plants = Plant.search_by_name_type_and_category(params[:query])
+    else
+      @plants = Plant.all
+    end
   end
 
   def new
