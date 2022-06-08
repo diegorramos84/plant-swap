@@ -2,7 +2,7 @@
 // <button class="button-55" role="button">Button 55</button>
 
 /* CSS */
-.button-55 {
+.pink-btn {
   color: black;
   align-self: center;
   background-color: #FFB7BC;
@@ -35,12 +35,12 @@
   margin-bottom: 5px;
 }
 
-.button-55:hover {
+.pink-btn:hover {
   color: black;
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 
-.button-55:focus {
+.pink-btn:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
