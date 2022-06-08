@@ -5,5 +5,23 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  padding-right: 87px;
+}
+
+.navbar-login {
+  border: none;
+  color: #ffb7bc;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 75px;
+}
+
+.navbar-login:hover {
+  color: #ffb7bc;
+  opacity: 0.5;
+}
+
+.navbar-btn:hover {
+  opacity: 0.5;
 }

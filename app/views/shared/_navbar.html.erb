@@ -13,6 +13,7 @@
         <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
         <a href=""><i class="fa-solid fa-message"></i></a>
         <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+        <%= link_to "Swap plant", new_plant_path, class: "navbar-btn" %>
       </div>
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
@@ -32,7 +33,7 @@
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "navbar-btn" %>
+            <%= link_to "Login", new_user_session_path, class: "navbar-login" %>
           </li>
         <% end %>
       </ul>
