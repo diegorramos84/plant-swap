@@ -1,5 +1,6 @@
 class PlantsController < ApplicationController
   before_action :set_plant, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @plants = Plant.all
@@ -33,10 +34,6 @@ class PlantsController < ApplicationController
   def destroy
     @plant.destroy
     redirect_to my_garden_path, status: :see_other
-  end
-
-  def users_garden
-    @plants = Plant.where(user: current_user)
   end
 
   private

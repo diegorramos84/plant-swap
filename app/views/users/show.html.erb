@@ -1,0 +1,33 @@
+<h1><%= @user.first_name %>'s profile</h1>
+<%= @user.photo %>
+<h3>Rating: <%= @user.average_rating %> </h3>
+
+<hr>
+
+<h2><%= @user.first_name %>'s garden</h2>
+<% @user.plants.each do |plant| %>
+  <%= plant.common_name %>
+    <% if plant.user == current_user %>
+      <%= link_to "Edit", edit_plant_path(plant) %>
+      <%= link_to "Delete", plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  %>
+    <% end %>
+<% end %>
+
+<hr>
+
+<h2>Reviews</h2>
+
+<p>Add a review</p>
+<%= simple_form_for [@user, @review] do |f| %>
+  <%= f.input :rating, collection: 1..5 %>
+  <%= f.input :content %>
+  <%= f.submit "Submit review", class: "btn btn-primary" %>
+<% end %>
+
+<br>
+
+<% @user.reviews.each do |review| %>
+  <p>Rating: <%= review.rating.to_i %></p>
+  <p><%= review.content %></p>
+  <hr>
+<% end %>

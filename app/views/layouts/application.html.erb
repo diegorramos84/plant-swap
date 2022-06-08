@@ -10,12 +10,12 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body>
+  <body class="background-colour">
   <% if controller_name == "pages" && action_name == "home" %>
   <% else %>
       <%= render "shared/navbar" %>
   <% end %>
-    
+
     <%= render "shared/flashes" %>
     <%= yield %>
     <%= render "shared/footer" %>
