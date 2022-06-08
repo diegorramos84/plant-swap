@@ -43,7 +43,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_07_132953) do
   end
 
   create_table "bookings", force: :cascade do |t|
-    t.string "booking_status"
+    t.string "buy_status", default: "pending"
+    t.integer "booking_quantity"
     t.bigint "user_id", null: false
     t.bigint "plant_id", null: false
     t.datetime "created_at", null: false
@@ -54,7 +55,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_07_132953) do
 
   create_table "plants", force: :cascade do |t|
     t.string "category"
-    t.string "plant_type"
+    t.string "type"
     t.string "botanical_name"
     t.string "common_name"
     t.text "description"

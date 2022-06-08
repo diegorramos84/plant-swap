@@ -7,5 +7,8 @@
 <% @plants.each do |plant| %>
     <li><%= link_to plant.common_name, plant_path(plant) %></li>
     <%= link_to "See user's profile", user_path(plant.user) %>
+    <% if plant.photo.attached? %>
+      <%= cl_image_tag plant.photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
     <hr>
 <% end %>
