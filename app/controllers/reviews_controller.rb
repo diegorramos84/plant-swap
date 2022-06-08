@@ -1,11 +1,13 @@
 class ReviewsController < ApplicationController
   def new
-    @user = User.find(params[:user_id])
+    @plant = Plant.find(params[:plant_id])
+    @user = @plant.user
     @review = Review.new
   end
 
   def create
-    @user = User.find(params[:user_id])
+    @plant = Plant.find(params[:plant_id])
+    @user = @plant.user
     @review = Review.new(review_params)
     @review.user = @user
     @review.save
