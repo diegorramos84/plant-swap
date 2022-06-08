@@ -30,6 +30,8 @@ gem "stimulus-rails"
 # Faker
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
+# Geocoder
+gem "geocoder"
 
 # cloudinary
 gem "cloudinary"
