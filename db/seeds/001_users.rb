@@ -2,27 +2,27 @@ require 'faker'
 # User.destroy_all
 # puts "Destroying Users"
 
-user1 = User.create!(
-    first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name,
-    address: "3 Acorn Lodge, 21 Fulready Road",
-    postcode: "E10 6ED",
-    email: Faker::Internet.email,
-    password:"123456",
-    average_rating: rand(1..5)
+@user1 = User.create!(
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
+  address: "3 Acorn Lodge, 21 Fulready Road",
+  postcode: "E10 6ED",
+  email: Faker::Internet.email,
+  password: "123456",
+  average_rating: rand(1..5)
 )
 
-user2 = User.create!(
+@user2 = User.create!(
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "24 St Margarets Road",
   postcode: "E12 5DP",
   email: Faker::Internet.email,
-  password:"123456",
+  password: "123456",
   average_rating: rand(1..5)
 )
 
-user3 = User.create!(
+@user3 = User.create!(
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "6 Cowper Avenue",
@@ -32,7 +32,7 @@ user3 = User.create!(
   average_rating: rand(1..5)
 )
 
-user4 = User.create!(
+@user4 = User.create!(
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "75 Hampton Road",
@@ -42,7 +42,7 @@ user4 = User.create!(
   average_rating: rand(1..5)
 )
 
-user5 = User.create!(
+@user5 = User.create!(
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "114 Plashet Road",
@@ -52,8 +52,8 @@ user5 = User.create!(
   average_rating: rand(1..5)
 )
 
-@user1 = user1
-@user2 = user2
-@user3 = user3
-@user4 = user4
-@user5 = user5
+# @user1 = user1
+# @user2 = user2
+# @user3 = user3
+# @user4 = user4
+# @user5 = user5
