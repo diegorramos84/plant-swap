@@ -3,8 +3,7 @@
     <h1>Plants Index Page</h1>
 
     <%= link_to "Swap a plant", new_plant_path, class: "pink-btn" %>
-    <%= link_to "List a plant", new_plant_path %>
-    
+
     <div class="container">
       <h2>Search for a plant: </h2>
       <%= simple_form_for :search_by_name_type_and_category, url: plants_path, method: :get do |f| %>
