@@ -1,39 +1,39 @@
-<h1>All your bookings</h1>
+<h1>Your bookings</h1>
+<%= "Current user id: #{current_user.id}" %>
 
-<% @bookings.each do |booking| %>
-  <%= booking.plant.common_name %>
-  <%= booking.plant.user.first_name %>
-  <%# <% @plant = Plant.find(booking.plant_id) %>
-  <%# <% if current_user.id == booking.plant.user.id %> %>
-      <%# <p><%= "Plant: #{@plant.common_name}"</p> %> %>
-      <%# <p><%= "Plant buyer: #{booking.user.first_name} #{booking.user.last_name}"</p> %> %>
-      <%# <p><%= "Order Status: #{booking.buy_status}"</p> %> %>
-    <%# <% if booking.buy_status == 'accepted' %> %>
-      <%# <p><strong>You approved this booking</strong></p> %>
-      <%# <%= link_to "Reject this booking", reply_booking_path(booking, status: 'rejected') %> %>
-    <%# <% elsif booking.buy_status == 'rejected' %> %>
-      <%# <p><strong>You rejected this booking</strong></p> %>
-      <%# <%= link_to "Approve this booking", reply_booking_path(booking, status: 'accepted') %> %>
-    <%# <% else %> %>
-      <%# <%= link_to "Approve", reply_booking_path(booking, status: 'accepted') %> %>
-      <%# <%= link_to "Reject", reply_booking_path(booking, status: 'rejected') %> %>
-    <%# <% end %> %>
-    <%# <% else %> %>
-      <%# <p><%= "Plant: #{@plant.common_name}"</p> %> %>
-      <%# <p><%= "Plant owner: #{@plant.user.first_name} #{@plant.user.last_name}"</p> %> %>
-      <%# <p><%= "Plant buyer: #{booking.user.first_name} #{booking.user.last_name}"</p> %> %>
-      <%# <p><%= "Order Status: #{booking.buy_status}"</p> %> %>
-  <%# <% end %> %>
+<h2>My plant's bookings</h2>
+<% @bookings_seller.each do |booking| %>
+  <p>----------------------------------</p>
+  <%= link_to "See user's profile", user_path(plant.user) %>
+    <% if plant.photo.attached? %>
+      <%= cl_image_tag plant.photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+  <p><%= "Booking id #{booking.id}"%></p>
+  <p><%= "User id #{booking.user_id}"%></p>
+  <p><%= "Order #{booking.buy_status}"%></p>
+  <p><%= "Plant: #{booking.plant.common_name}"%></p>
+  <p><%= "Quantity: #{booking.booking_quantity}"%></p>
+  <p><%= "Amount of plants left: #{booking.plant.quantity}" %></p>
+  <% if booking.buy_status == 'pending' %>
+    <%= link_to "Approve", reply_buy_path(booking, status: 'accepted') %>
+    <%= link_to "Reject", reply_buy_path(booking, status: 'rejected') %>
+
+  <% elsif booking.buy_status == 'accepted' || booking.buy_status == 'completed'  %>
+    <p><strong>You approved this booking</strong></p>
+
+  <% else booking.buy_status == 'rejected' %>
+    <p><strong>You rejected this booking</strong></p>
+
+  <% end %>
 <% end %>
 
 
-<h2>Booking requests</h2>
-
-<% @plants.each do |plant| %>
-  <% plant.bookings.each do |booking| %>
-    <p><%= "Plant: #{booking.plant.common_name}" %><p>
-    <p><%= "Quantity: #{booking.booking_quantity}" %><p>
-    <p><%= "Plant owner: #{booking.user.first_name} #{booking.user.last_name}" %><p>
-    <p><%= "Owner's address: #{booking.user.address}, #{booking.user.postcode}" %><p>
-    <% end %>
+<h2>My bookings</h2>
+<% @bookings.each do |booking| %>
+  <p>----------------------------------</p>
+  <p><%= "Booking id #{booking.id}"%></p>
+  <p><%= "User id #{booking.user_id}"%></p>
+  <p><%= "Order #{booking.buy_status}"%></p>
+  <p><%= "Plant: #{booking.plant.common_name}"%></p>
+  <p><%= "Quantity: #{booking.booking_quantity}"%></p>
 <% end %>
