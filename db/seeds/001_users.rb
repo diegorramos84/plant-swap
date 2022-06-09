@@ -3,6 +3,7 @@ require 'faker'
 # puts "Destroying Users"
 
 @user1 = User.create!(
+  username: Faker::Internet.unique.username,
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "3 Acorn Lodge, 21 Fulready Road",
@@ -18,6 +19,7 @@ photo = URI.open(url)
 @user1.save
 
 @user2 = User.create!(
+  username: Faker::Internet.unique.username,
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "24 St Margarets Road",
@@ -32,6 +34,7 @@ photo = URI.open(url)
 @user2.save
 
 @user3 = User.create!(
+  username: Faker::Internet.unique.username,
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "6 Cowper Avenue",
@@ -46,6 +49,7 @@ photo = URI.open(url)
 @user3.save
 
 @user4 = User.create!(
+  username: Faker::Internet.unique.username,
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "75 Hampton Road",
@@ -60,6 +64,7 @@ photo = URI.open(url)
 @user4.save
 
 @user5 = User.create!(
+  username: Faker::Internet.unique.username,
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
   address: "114 Plashet Road",

@@ -3,7 +3,11 @@ class PlantsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @plants = Plant.all
+    if params[:query].present?
+      @plants = Plant.search_by_name_type_and_category(params[:query])
+    else
+      @plants = Plant.all
+    end
   end
 
   def new
@@ -14,7 +18,7 @@ class PlantsController < ApplicationController
     @plant = Plant.new(plant_params)
     @plant.user = current_user
     if @plant.save!
-      redirect_to my_garden_path(@plant)
+      redirect_to plants_path(@plant)
     else
       render :new, status: :unprocessable_entity
     end
