@@ -4,10 +4,6 @@
 <h2>My plant's bookings</h2>
 <% @bookings_seller.each do |booking| %>
   <p>----------------------------------</p>
-  <%= link_to "See user's profile", user_path(plant.user) %>
-    <% if plant.photo.attached? %>
-      <%= cl_image_tag plant.photo.key, height: 300, width: 400, crop: :fill %>
-    <% end %>
   <p><%= "Booking id #{booking.id}"%></p>
   <p><%= "User id #{booking.user_id}"%></p>
   <p><%= "Order #{booking.buy_status}"%></p>
