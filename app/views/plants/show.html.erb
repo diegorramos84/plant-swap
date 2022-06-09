@@ -11,3 +11,8 @@
   <p>Quantity: <%= @plant.quantity %></p>
   <p>Indoor: <%= @plant.indoor %></p>
 </div>
+<div style="width: 50%; height: 600px;"
+  data-controller="map"
+  data-map-marker-value="<%= @marker.to_json %>"
+  data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+</div>
