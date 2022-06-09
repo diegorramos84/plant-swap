@@ -1,4 +1,5 @@
-<h1>Plant show page</h1>
+<br>
+
 <div>
   <%= cl_image_tag @plant.photo.key, height: 300, width: 400, crop: :fill %>
   <p>Category: <%= @plant.category %></p>
@@ -7,7 +8,18 @@
   <p>Botanical name: <%= @plant.botanical_name %></p>
   <p>Common name: <%= @plant.common_name %></p>
   <p>Light conditions: <%= @plant.light_conditions %></p>
-  <p>Mature height: <%= @plant.mature_height %></p>
+  <p>Mature height: <%= @plant.mature_height %>cm</p>
   <p>Quantity: <%= @plant.quantity %></p>
-  <p>Indoor: <%= @plant.indoor %></p>
+  <% if @plant.indoor %>
+    <p>This is an indoor plant</p>
+  <% else %>
+    <p>This is an outdoor plant</p>
+  <% end %>
+  <%= link_to "Request this plant", new_plant_booking_path(@plant) %>
+</div>
+
+<div style="width: 50%; height: 600px;"
+  data-controller="map"
+  data-map-marker-value="<%= @marker.to_json %>"
+  data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>

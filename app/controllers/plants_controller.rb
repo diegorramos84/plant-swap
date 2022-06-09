@@ -25,6 +25,7 @@ class PlantsController < ApplicationController
   end
 
   def show
+    @marker = [{ lat: @plant.user.geocode[0], lng: @plant.user.geocode[1] }]
   end
 
   def edit
