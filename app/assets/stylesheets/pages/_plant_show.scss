@@ -1,3 +1,9 @@
 .plant-show-container {
   display: flex;
 }
+
+#map {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
