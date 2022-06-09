@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'rooms/index'
   devise_for :users
   root to: "pages#home"
   resources :users, only: %i[index show]
@@ -12,5 +13,9 @@ Rails.application.routes.draw do
     resources :bookings, only: %i[new create] do
       resources :reviews, only: %i[new create show]
     end
+  end
+
+  resources :rooms do
+    resources :messages
   end
 end
