@@ -1,10 +1,6 @@
-<div class="container">
-  <br>
-  <div class="plant-show-container">
-    <div class="container-label-img">
-      <%= cl_image_tag @plant.photo.key, height: 500, width: 600 %>
-    </div>
-    <div class="container-label-info">
+<div class="card-product">
+    <%= cl_image_tag @plant.photo.key, height: 500, width: 600 %>
+    <div class="card-product-infos">
       <p><strong>Category:</strong> <%= @plant.category %></p>
       <p><strong>Plant type:</strong> <%= @plant.plant_type %></p>
       <p><strong>Description:</strong> <%= @plant.description %></p>
@@ -18,18 +14,12 @@
       <% else %>
         <p>This is an outdoor plant</p>
       <% end %>
-      <%= link_to "Request this plant", new_plant_booking_path(@plant), class: "pink-btn" %>
     </div>
-
-  </div>
-<br><br>
-  <div class="map-label">
-    <div id="map"
-      style="width: 50%; height: 600px;"
-      data-controller="map"
-      data-map-marker-value="<%= @marker.to_json %>"
-      data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+    <div class="quantity-dropdown">
+      <%= simple_form_for [@plant, @booking] do |f| %>
+        <%= f.input :booking_quantity, collection: 0..@plant.quantity %>
+        <%= f.button :submit, class: "pink-btn" %>
+      <% end %>
     </div>
   </div>
-  <br><br>
 </div>
