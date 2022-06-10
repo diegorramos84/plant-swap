@@ -2,17 +2,18 @@
 <br>
   <h1>Add a plant</h1>
 
-    <%= simple_form_for @plant do |f| %>
-      <%= f.input :category %>
-      <%= f.input :plant_type %>
-      <%= f.input :botanical_name %>
-      <%= f.input :common_name %>
-      <%= f.input :description %>
-      <%= f.input :light_conditions %>
-      <%= f.input :mature_height %>
-      <%= f.input :quantity %>
-      <%= f.input :indoor %>
-      <%= f.button :submit, class: "pink-btn" %>
-    <% end %>
+  <%= simple_form_for @plant do |f| %>
+    <%= f.input :category %>
+    <%= f.input :plant_type %>
+    <%= f.input :botanical_name %>
+    <%= f.input :common_name %>
+    <%= f.input :description %>
+    <%= f.input :light_conditions %>
+    <%= f.input :mature_height %>
+    <%= f.input :quantity %>
+    <%= f.input :indoor %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit, class: "pink-btn"  %>
+  <% end %>
     <br>
 </div>
