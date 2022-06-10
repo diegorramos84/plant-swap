@@ -19,7 +19,7 @@
     </div>
     <div class="quantity-dropdown">
       <%= simple_form_for [@plant, @booking] do |f| %>
-        <%= f.input :booking_quantity, collection: 0..@plant.quantity %>
+        <%= f.input :booking_quantity, collection: 1..@plant.quantity, include_blank: false %>
         <%= f.button :submit, class: "pink-btn" %>
       <% end %>
     </div>
