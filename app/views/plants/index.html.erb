@@ -1,21 +1,21 @@
 <div class="container">
   <div class="mt-3">
-    <h1>Plants Index Page</h1>
-
-    <%= link_to "Swap a plant", new_plant_path, class: "pink-btn" %>
-
-    <div class="container">
-      <h2>Search for a plant: </h2>
+  <br>
+    <div class="index-search">
+      <h2 style="margin-left: 74px;">Search for a plant</h2>
       <%= simple_form_for :search_by_name_type_and_category, url: plants_path, method: :get do |f| %>
         <div class="search-form-control form-group">
-          <input class="form-control string required" type="text" name="[query]" id="search_query" />
-         <button name="button" type="submit" class="btn btn-flat">
+          <input class="form-control string required" type="text" name="[query]" id="search_query" /><br>
+         <button name="button" type="submit" class="pink-btn", style="margin-left: 75px;">
            <i class="fas fa-search"></i> Search
          </button>
         </div>
       <% end %>
     </div>
-
+    <p>_______________________________________________________________________________________________________________________________________________________</p>
+    <br>
+    <h1 style= "text-align: center;">Check out the plants</h1><br>
+    <%= link_to "Swap a plant", new_plant_path, class: "pink-btn" %>
     <hr>
     <%= render 'shared/cards' %>
   </div>
