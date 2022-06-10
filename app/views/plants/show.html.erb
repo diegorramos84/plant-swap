@@ -1,5 +1,9 @@
 <div class="container">
   <br>
+    <form>
+    <input type="button" value="Back" onclick="history.back()" class="pink-btn">
+  </form>
+  <br>
   <div class="plant-show-container">
     <div class="container-label-img">
       <%= cl_image_tag @plant.photo.key, height: 500, width: 600 %>

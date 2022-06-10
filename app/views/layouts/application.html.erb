@@ -12,13 +12,17 @@
   </head>
 
   <body class="background-colour">
-  <% if controller_name == "pages" && action_name == "home" %>
-  <% else %>
-      <%= render "shared/navbar" %>
-  <% end %>
+    <% if controller_name == "pages" && action_name == "home" %>
+    <% else %>
+        <%= render "shared/navbar" %>
+    <% end %>
 
     <%= render "shared/flashes" %>
     <%= yield %>
-    <%= render "shared/footer" %>
+
+    <% if controller_name == "pages" && action_name == "home" %>
+    <% else %>
+      <%= render "shared/footer" %>
+    <% end %>
   </body>
 </html>
