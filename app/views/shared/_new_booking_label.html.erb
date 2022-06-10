@@ -1,5 +1,7 @@
 <div class="card-product">
-    <%= cl_image_tag @plant.photo.key, height: 500, width: 600 %>
+    <% if @plant.photo.attached? %>
+      <%= cl_image_tag @plant.photo.key, height: 500, width: 600 %>
+    <% end %>
     <div class="card-product-infos">
       <p><strong>Category:</strong> <%= @plant.category %></p>
       <p><strong>Plant type:</strong> <%= @plant.plant_type %></p>
