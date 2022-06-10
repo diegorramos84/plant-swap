@@ -26,6 +26,8 @@ class PlantsController < ApplicationController
 
   def show
     @marker = [{ lat: @plant.user.geocode[0], lng: @plant.user.geocode[1] }]
+    @user = User.find(params[:id])
+    @bookings = @user.bookings
   end
 
   def edit
