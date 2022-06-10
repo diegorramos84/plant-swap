@@ -19,6 +19,7 @@
       <p><strong>Light conditions:</strong> <%= @plant.light_conditions %></p>
       <p><strong>Mature height:</strong> <%= @plant.mature_height %>cm</p>
       <p><strong>Quantity:</strong> <%= @plant.quantity %></p>
+      <p><strong>Plant owner:</strong> <%= link_to "#{@plant.user.first_name} #{@plant.user.last_name}", user_path(@user) %></p>
       <% if @plant.indoor %>
         <p>This is an indoor plant</p>
       <% else %>
