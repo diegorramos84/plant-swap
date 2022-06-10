@@ -5,13 +5,13 @@
     <br>
 
     <%= simple_form_for @plant do |f| %>
-      <%= f.input :category %>
-      <%= f.input :plant_type %>
+      <%= f.input :category, collection: ["Plant", "Plantlet", "Clipping"] %>
+      <%= f.input :plant_type, collection: ["Hanging & climbing", "Ferns", "Cacti & succulents", "Palms", "Other"] %>
       <%= f.input :botanical_name %>
       <%= f.input :common_name %>
       <%= f.input :description %>
-      <%= f.input :light_conditions %>
-      <%= f.input :mature_height %>
+      <%= f.input :light_conditions, collection: ["Direct sunlight", "Most light conditions", "Shade"] %>
+      <%= f.input :mature_height, label: 'Height at maturity (cm)'%>
       <%= f.input :quantity %>
       <%= f.input :indoor %> <br> <br>
       <%= f.button :submit, class: "pink-btn" %>
