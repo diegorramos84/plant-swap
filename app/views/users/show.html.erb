@@ -1,8 +1,4 @@
 <h1><%= @user.first_name %>'s profile</h1>
-<%= cl_image_tag @user.photo.key, :transformation=>[
-  {:aspect_ratio=>"1.0", :width=>150, :crop=>"fill"},
-  {:radius=>"max"}
-  ] %>
 <h3>Rating: <%= @user.average_rating %> </h3>
 
 <hr>

@@ -18,7 +18,7 @@ class PlantsController < ApplicationController
     @plant = Plant.new(plant_params)
     @plant.user = current_user
     if @plant.save!
-      redirect_to users_path(@plant)
+      redirect_to user_path(@plant.user)
     else
       render :new, status: :unprocessable_entity
     end
