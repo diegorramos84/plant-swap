@@ -1,35 +1,34 @@
-<h1>Your bookings</h1>
-<%= "Current user id: #{current_user.id}" %>
+<div class="container">
+  <br>
+  <h1>Your orders</h1>
 
-<h2>My plant's bookings</h2>
-<% @bookings_seller.each do |booking| %>
-  <p>----------------------------------</p>
-  <p><%= "Booking id #{booking.id}"%></p>
-  <p><%= "User id #{booking.user_id}"%></p>
-  <p><%= "Order #{booking.buy_status}"%></p>
-  <p><%= "Plant: #{booking.plant.common_name}"%></p>
-  <p><%= "Quantity: #{booking.booking_quantity}"%></p>
-  <p><%= "Amount of plants left: #{booking.plant.quantity}" %></p>
-  <% if booking.buy_status == 'pending' %>
-    <%= link_to "Approve", reply_buy_path(booking, status: 'accepted') %>
-    <%= link_to "Reject", reply_buy_path(booking, status: 'rejected') %>
+  <div class="card-product">
+    <% @bookings_seller.each do |booking| %>
+      <p><%= "Booking id #{booking.id}"%></p>
+      <p><%= "Order #{booking.buy_status}"%></p>
+      <p><%= "Plant: #{booking.plant.common_name}"%></p>
+      <p><%= "Quantity: #{booking.booking_quantity}"%></p>
+      <p><%= "Amount of plants left: #{booking.plant.quantity}" %></p>
+      <% if booking.buy_status == 'pending' %>
+        <%= link_to "Approve", reply_buy_path(booking, status: 'accepted') %>
+        <%= link_to "Reject", reply_buy_path(booking, status: 'rejected') %>
 
-  <% elsif booking.buy_status == 'accepted' || booking.buy_status == 'completed'  %>
-    <p><strong>You approved this booking</strong></p>
+      <% elsif booking.buy_status == 'accepted' || booking.buy_status == 'completed'  %>
+        <p><strong>You approved this booking</strong></p>
 
-  <% else booking.buy_status == 'rejected' %>
-    <p><strong>You rejected this booking</strong></p>
+      <% else booking.buy_status == 'rejected' %>
+        <p><strong>You rejected this booking</strong></p>
 
-  <% end %>
-<% end %>
-
-
-<h2>My bookings</h2>
-<% @bookings.each do |booking| %>
-  <p>----------------------------------</p>
-  <p><%= "Booking id #{booking.id}"%></p>
-  <p><%= "User id #{booking.user_id}"%></p>
-  <p><%= "Order #{booking.buy_status}"%></p>
-  <p><%= "Plant: #{booking.plant.common_name}"%></p>
-  <p><%= "Quantity: #{booking.booking_quantity}"%></p>
-<% end %>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="card-product">
+    <% @bookings.each do |booking| %>
+      <p><%= "Booking id #{booking.id}"%></p>
+      <p><%= "User id #{booking.user_id}"%></p>
+      <p><%= "Order #{booking.buy_status}"%></p>
+      <p><%= "Plant: #{booking.plant.common_name}"%></p>
+      <p><%= "Quantity: #{booking.booking_quantity}"%></p>
+    <% end %>
+  </div>
+</div>
