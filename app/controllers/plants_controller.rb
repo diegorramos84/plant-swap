@@ -26,7 +26,7 @@ class PlantsController < ApplicationController
 
   def show
     @marker = [{ lat: @plant.user.geocode[0], lng: @plant.user.geocode[1] }]
-    @user = User.find(params[:id])
+    @user = @plant.user
     @bookings = @user.bookings
   end
 
@@ -51,6 +51,6 @@ class PlantsController < ApplicationController
 
   def plant_params
     params.require(:plant).permit(:category, :plant_type, :botanical_name, :common_name, :description, :light_conditions,
-                                  :mature_height, :quantity, :indoor, :photo)
+                                  :mature_height, :quantity, :indoor, :photo, :user_id)
   end
 end
