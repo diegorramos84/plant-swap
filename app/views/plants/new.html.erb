@@ -3,8 +3,8 @@
   <div class="listing-card">
     <h1>List your plant</h1>
     <br>
-
-    <%= simple_form_for @plant do |f| %>
+    <div class="list-form">
+  <%= simple_form_for @plant do |f| %>
       <%= f.input :category, collection: ["Plant", "Plantlet", "Clipping"] %>
       <%= f.input :plant_type, collection: ["Hanging & climbing", "Ferns", "Cacti & succulents", "Palms", "Other"] %>
       <%= f.input :botanical_name %>
@@ -16,6 +16,7 @@
       <%= f.input :indoor %> <br> <br>
       <%= f.button :submit, class: "pink-btn" %>
     <% end %>
+  </div>
   </div>
     <br>
 </div>
