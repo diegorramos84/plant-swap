@@ -1,4 +1,6 @@
-<h1>Add a plant</h1>
+<div class="container">
+<br>
+  <h1>Add a plant</h1>
 
   <%= simple_form_for @plant do |f| %>
     <%= f.input :category %>
@@ -11,5 +13,7 @@
     <%= f.input :quantity %>
     <%= f.input :indoor %>
     <%= f.input :photo, as: :file %>
-    <%= f.button :submit %>
+    <%= f.button :submit, class: "pink-btn"  %>
   <% end %>
+    <br>
+</div>
