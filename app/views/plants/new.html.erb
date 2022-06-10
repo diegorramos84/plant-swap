@@ -1,6 +1,8 @@
 <div class="container">
-<br>
-  <h1>Add a plant</h1>
+<br><br>
+  <div class="listing-card">
+    <h1>List your plant</h1>
+    <br>
 
     <%= simple_form_for @plant do |f| %>
       <%= f.input :category %>
@@ -11,8 +13,9 @@
       <%= f.input :light_conditions %>
       <%= f.input :mature_height %>
       <%= f.input :quantity %>
-      <%= f.input :indoor %>
+      <%= f.input :indoor %> <br> <br>
       <%= f.button :submit, class: "pink-btn" %>
     <% end %>
+  </div>
     <br>
 </div>
