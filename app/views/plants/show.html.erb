@@ -6,7 +6,9 @@
   <br>
   <div class="plant-show-container">
     <div class="container-label-img">
-      <%= cl_image_tag @plant.photo.key, height: 500, width: 600 %>
+      <% if @plant.photo.attached? %>
+        <%= cl_image_tag @plant.photo.key, height: 500, width: 600 %>
+      <% end %>
     </div>
     <div class="container-label-info">
       <p><strong>Category:</strong> <%= @plant.category %></p>
