@@ -14,25 +14,26 @@
       <p><strong>Category:</strong> <%= @plant.category %></p>
       <p><strong>Plant type:</strong> <%= @plant.plant_type %></p>
       <p><strong>Description:</strong> <%= @plant.description %></p>
-      <p><strong>Botanical name:</strong> <%= @plant.botanical_name %></p>
-      <p><strong>Common name:</strong>  <%= @plant.common_name %></p>
-      <p><strong>Light conditions:</strong> <%= @plant.light_conditions %></p>
-      <p><strong>Mature height:</strong> <%= @plant.mature_height %>cm</p>
-      <p><strong>Quantity:</strong> <%= @plant.quantity %></p>
-      <p><strong>Plant owner:</strong> <%= link_to "#{@plant.user.first_name} #{@plant.user.last_name}", user_path(@user) %></p>
       <% if @plant.indoor %>
         <p>This is an indoor plant</p>
       <% else %>
         <p>This is an outdoor plant</p>
       <% end %>
-      <%= link_to "Request this plant", new_plant_booking_path(@plant), class: "pink-btn" %>
+      <p><strong>Botanical name:</strong> <%= @plant.botanical_name %></p>
+      <p><strong>Common name:</strong>  <%= @plant.common_name %></p>
+      <p><strong>Light conditions:</strong> <%= @plant.light_conditions %></p>
+      <p><strong>Mature height:</strong> <%= @plant.mature_height %>cm</p>
+      <p><strong>Quantity:</strong> <%= @plant.quantity %></p>
+
+      <%= link_to "Request this #{@plant.category}", new_plant_booking_path(@plant), class: "pink-btn" %>
+      <%= link_to "View #{@plant.user.first_name} #{@plant.user.last_name}'s profile", user_path(@user), class: "pink-btn" %></p>
     </div>
 
   </div>
 <br><br>
   <div class="map-label">
-    <div id="map"
-      style="width: 50%; height: 600px;"
+    <div
+      style="width: 100%; height: 600px;"
       data-controller="map"
       data-map-marker-value="<%= @marker.to_json %>"
       data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
