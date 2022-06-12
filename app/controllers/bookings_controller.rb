@@ -53,7 +53,7 @@ class BookingsController < ApplicationController
   end
 
   # def destroy
-    # @booking.destroy
-    # redirect_to my_bookings_path, status: :see_other
+  #   @booking.destroy
+  #   redirect_to my_bookings_path, status: :see_other
   # end
 end
