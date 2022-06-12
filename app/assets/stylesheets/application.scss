@@ -13,4 +13,8 @@
 
 .background-colour {
   background-color: #fff3ea;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
