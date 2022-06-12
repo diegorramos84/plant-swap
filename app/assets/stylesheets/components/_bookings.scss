@@ -30,5 +30,12 @@
 
 .booking-user-action {
   padding-left: 10px;
-  border-left: 0.5px solid #1C5252;
+  flex-grow: 0;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-user-action a {
+  display: block;
 }

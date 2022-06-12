@@ -9,23 +9,40 @@
   </nav>
   <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-      <div class="booking-card">
+      <div class="row">
         <% @bookings_seller.each do |booking| %>
-          <p><%= "Booking id #{booking.id}"%></p>
-          <p><%= "Order #{booking.buy_status}"%></p>
-          <p><%= "Plant: #{booking.plant.common_name}"%></p>
-          <p><%= "Quantity: #{booking.booking_quantity}"%></p>
-          <p><%= "Amount of plants left: #{booking.plant.quantity}" %></p>
-          <% if booking.buy_status == 'pending' %>
-            <%= link_to "Approve", reply_buy_path(booking, status: 'accepted') %>
-            <%= link_to "Reject", reply_buy_path(booking, status: 'rejected') %>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="booking-card mb-2">
+              <div class="booking-image">
+                <% if booking.plant.photo.attached? %>
+                  <%= cl_image_tag booking.plant.photo.key, height: 200, width: 200 %>
+                <% end %>
+              </div>
+              <div class="booking-content">
+                <p><strong>Plant name: </strong><%= booking.plant.common_name %></p>
+                <p><strong>Plant owner: </strong><%= "#{booking.plant.user.first_name} #{booking.plant.user.last_name}"%></p>
+                <p><strong>Quantity: </strong><%= booking.booking_quantity%></p>
+                <p><strong>Order Status: </strong><%= booking.buy_status%></p>
+                <p><strong>Amount of plants left: </strong><%= booking.plant.quantity%></p>
+              </div>
+              <div class="booking-user-action">
+                <% if booking.buy_status == 'pending' %>
+                  <%= link_to reply_buy_path(booking, status: 'accepted') do %>
+                    <i class="fa-solid fa-check"></i>
+                  <% end %>
+                  <%= link_to reply_buy_path(booking, status: 'rejected') do %>
+                    <i class="fa-solid fa-xmark"></i>
+                    <% end %>
 
-          <% elsif booking.buy_status == 'accepted' || booking.buy_status == 'completed'  %>
-            <p><strong>You approved this booking</strong></p>
+                <% elsif booking.buy_status == 'accepted' || booking.buy_status == 'completed'  %>
+                  <p><strong>You approved this booking</strong></p>
 
-          <% else booking.buy_status == 'rejected' %>
-            <p><strong>You rejected this booking</strong></p>
-          <% end %>
+                <% else booking.buy_status == 'rejected' %>
+                  <p><strong>You rejected this booking</strong></p>
+                <% end %>
+              </div>
+            </div>
+          </div>
         <% end %>
       </div>
     </div>
@@ -36,7 +53,7 @@
                 <div class="booking-card mb-2">
                   <div class="booking-image">
                     <% if booking.plant.photo.attached? %>
-                      <%= cl_image_tag booking.plant.photo.key, height: 180, width: 150 %>
+                      <%= cl_image_tag booking.plant.photo.key, height: 200, width: 200 %>
                     <% end %>
                   </div>
                   <div class="booking-content">
@@ -46,8 +63,12 @@
                     <p><strong>Order Status: </strong><%= booking.buy_status%></p>
                   </div>
                   <div class="booking-user-action">
-                    <button class="btn btn-primary">Contact owner</button>
-                    <button class="btn btn-danger">Delete</button>
+                    <%=link_to plants_path do %>
+                      <i class="fa-solid fa-message"></i>
+                    <% end %>
+                    <%# <%=link_to plants_path do %>
+                      <%# <i class="fa-solid fa-trash-can"></i> %>
+                    <%# <% end %>
                   </div>
                 </div>
               </div>
