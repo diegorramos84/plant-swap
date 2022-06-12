@@ -12,7 +12,7 @@ class BookingsController < ApplicationController
     @booking.plant_id = @plant.id
     @booking.user_id = @user.id
     if @booking.save!
-	    redirect_to my_bookings_path(@plant)
+	    redirect_to bookings_path(@plant)
     else
       render :new
     end
@@ -49,11 +49,11 @@ class BookingsController < ApplicationController
       @booking.buy_status = 'rejected'
       @booking.save!
     end
-      redirect_to my_bookings_path, notice: "Order status changed to #{params[:status]}"
+      redirect_to bookings_path, notice: "Order status changed to #{params[:status]}"
   end
 
   # def destroy
-  #   @booking.destroy
-  #   redirect_to my_bookings_path, status: :see_other
+    # @booking.destroy
+    # redirect_to bookings_path, status: :see_other
   # end
 end
