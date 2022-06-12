@@ -29,6 +29,10 @@
       <p><%= "Order #{booking.buy_status}"%></p>
       <p><%= "Plant: #{booking.plant.common_name}"%></p>
       <p><%= "Quantity: #{booking.booking_quantity}"%></p>
+      <% if booking.buy_status == "completed"%>
+          <%= link_to "Add a review", new_booking_review_path(booking) %>
+      <% end %>
     <% end %>
+
   </div>
 </div>
