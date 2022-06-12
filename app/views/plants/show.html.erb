@@ -24,8 +24,7 @@
       <p><strong>Light conditions:</strong> <%= @plant.light_conditions %></p>
       <p><strong>Mature height:</strong> <%= @plant.mature_height %>cm</p>
       <p><strong>Quantity:</strong> <%= @plant.quantity %></p>
-
-      <%= link_to "Request this #{@plant.category}", new_plant_booking_path(@plant), class: "pink-btn" %>
+      <%= link_to "Order this #{@plant.common_name}", new_plant_booking_path(@plant), class: "pink-btn" %>
       <%= link_to "View #{@plant.user.first_name} #{@plant.user.last_name}'s profile", user_path(@user), class: "pink-btn" %></p>
     </div>
 

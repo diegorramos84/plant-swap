@@ -1,16 +1,26 @@
-<h1><%= @user.first_name %>'s profile</h1>
-<h3>Rating: <%= @user.average_rating %> </h3>
-
+<% if @user == current_user %>
+  <h1>Your profile</h1>
+  <h3>Rating: <%= @user.average_rating %> </h3>
+<% else %>
+  <h1><%= @user.first_name %>'s profile</h1>
+  <h3>Rating: <%= @user.average_rating %> </h3>
+<% end %>
 <hr>
 
-<h2><%= @user.first_name %>'s garden</h2>
+<% if @user == current_user %>
+  <h1>Your garden</h1>
+<% else %>
+  <h2><%= @user.first_name %>'s garden</h2>
+<% end %>
 <% @user.plants.each do |plant| %>
   <%=link_to plant.common_name, plant_path(plant) %>
-  <%= cl_image_tag plant.photo.key, height: 300, width: 400, crop: :fill %>
-    <% if plant.user == current_user %>
-      <%= link_to "Edit", edit_plant_path(plant) %>
-      <%= link_to "Delete", plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  %>
-    <% end %>
+  <% if plant.photo.attached? %>
+    <%= cl_image_tag plant.photo.key, height: 300, width: 400, crop: :fill %>
+  <% end %>
+  <% if plant.user == current_user %>
+    <%= link_to "Edit", edit_plant_path(plant) %>
+    <%= link_to "Delete", plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  %>
+  <% end %>
 <% end %>
 
 <hr>
