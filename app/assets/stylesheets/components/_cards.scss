@@ -14,12 +14,13 @@
   margin-top: 36px;
 }
 
-.plant-card h2 {
+.plant-card h3 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
   color: #1A3263;
   font-size: 25px;
+  padding-bottom: 10px;
 }
 
 // .plant-card p {
@@ -32,8 +33,6 @@
 
 .plant-card .plant-info {
   padding: 16px;
-  display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   position: relative;
 }

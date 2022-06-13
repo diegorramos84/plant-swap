@@ -14,10 +14,14 @@
   margin-bottom: 60px;
 }
 
-.plant-card-landing h2 {
-  font-size: 26px !important;
+.plant-card-landing h4 {
+  font-size: 16px;
   font-weight: bold;
+  margin: 0;
   color: #1A3263;
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-family: 'Amatic SC', cursive;
 }
 
 // .plant-card p {
@@ -30,8 +34,6 @@
 
 .plant-card-landing .plant-info {
   padding: 16px;
-  display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   position: relative;
 }

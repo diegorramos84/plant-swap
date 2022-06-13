@@ -8,7 +8,8 @@
   flex-grow: 1;
 }
 .footer {
-  background: #1c5253;
+  background-color: #fae1ce;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   height: 65px;
   color: rgba(0,0,0,0.3);
   width: 100%;
@@ -21,7 +22,7 @@
   align-items: center;
 }
 .footer-links a {
-  color: #ffb7bc;
+  color: black;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
@@ -31,7 +32,7 @@
 }
 
 .footer-copyright {
-  color: #ffb7bc;
+  color: black;
 }
 
 .footer-inner {

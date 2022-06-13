@@ -1,8 +1,21 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-pages">
   <div class="container-xxl">
     <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "shared/logo.png" %>
+      <%= image_tag "shared/botanic.png" %>
     <% end %>
+
+    <div class="index-search">
+      <%= simple_form_for :search_by_name_type_and_category, url: plants_path, method: :get do |f| %>
+        <div class="search-form-control form-group">
+            <input class="form-control string required" type="text" name="[query]" id="search_query" />
+            <div class="search-btn">
+              <button name="button" type="submit" class="pink-btn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+        </div>
+      <% end %>
+    </div>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,15 +23,18 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <div class="navbar-icons">
-        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        <%# <a href=""><i class="fa-solid fa-magnifying-glass"></i></a> %>
         <a href=""><i class="fa-solid fa-message"></i></a>
-        <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
-        <%= link_to "Swap plant", new_plant_path, class: "navbar-btn" %>
+        <%= link_to "View plants", plants_path, class: "navbar-btn" %>
+        <%# <a href=""><i class="fa-solid fa-basket-shopping"></i></a> %>
+        <%= link_to "List plant", new_plant_path, class: "navbar-btn" %>
+        <%= link_to "Home", root_path, class: "navbar-btn" %>
       </div>
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" data-bs-toggle="dropdown"><%= current_user.username %></a>
+             <%# <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <%= image_tag "https://res.cloudinary.com/lardocelar/image/upload/v1654685294/user_placeholder_kbf1mr.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "My garden", user_path(current_user), class: "dropdown-item" %>
