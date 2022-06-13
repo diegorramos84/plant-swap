@@ -6,6 +6,7 @@ const initStarRating = () => {
   $('#review_rating').barrating({
     theme: 'css-stars'
   });
+  console.log($('#review_rating'))
 };
 
 export { initStarRating };
