@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 
   resources :bookings, only: %i[index show] do
     resources :reviews, only: %i[new create show]
+    resources :chatrooms, only: :show do
+      resources :messages, only: :create
+    end
   end
 
   resources :plants do
