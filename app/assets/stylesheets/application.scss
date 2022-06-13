@@ -13,5 +13,14 @@
 @import "room";
 
 .background-colour {
-  background-color: #C9FFE2;
+  background-color: #fff3ea;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-user-action a {
+  color: #1C5252;
+  font-size: larger;
 }

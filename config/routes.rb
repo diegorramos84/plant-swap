@@ -6,13 +6,19 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   # Defines the root path route ("/")
   # root "articles#index"
-  get '/reply_booking', to: 'bookings#reply_buy'
-  get '/my_bookings', to: 'bookings#index'
+  
+  get '/reply_buy', to: 'bookings#reply_buy'
+  resources :chatrooms, only: :show do
+    resources :messages, only: :create
+  end
+
+
+  resources :bookings, only: %i[index show] do
+    resources :reviews, only: %i[new create show]
+  end
 
   resources :plants do
-    resources :bookings, only: %i[new create] do
-      resources :reviews, only: %i[new create show]
-    end
+    resources :bookings, only: %i[new create]
   end
 
   resources :rooms do

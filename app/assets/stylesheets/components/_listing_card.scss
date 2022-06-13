@@ -1,0 +1,35 @@
+.listing-card {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 16px;
+  padding: 21px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 160px;
+  background-image: url("card-img");
+}
+
+.listing-card h1 {
+  text-align: center;
+}
+
+// .form-control {
+//   width: 800px;
+//   margin-left: 75px;
+//   box-shadow: 3px 3px 5px 6px #ccc;
+// }
+
+// .form-label {
+//   margin-left: 78px;
+// }
+
+// .form-check {
+//   margin-left: 78px;
+//   margin-top: 20px;
+// }
+
+// .form-select {
+//   width: 800px;
+//   margin-left: 78px;
+//   box-shadow: 3px 3px 5px 6px #ccc;
+// }

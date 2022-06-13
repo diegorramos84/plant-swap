@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="plant-card">
+    <% @plants.each do |plant| %>
+      <%= link_to plant_path(plant), class: "text-decoration-none" do %>
+        <div class="full-card">
+          <% if plant.photo.attached? %>
+            <%= cl_image_tag plant.photo.key, :width=>306, :height=>250, :crop=>"fill" %>
+          <% end %>
+          <div class= "plant-info">
+            <h2><%= plant.common_name %></h2>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <br><br>
+</div>

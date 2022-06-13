@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body class="background-colour">
-  <% if controller_name == "pages" && action_name == "home" %>
-  <% else %>
-      <%= render "shared/navbar" %>
-  <% end %>
+  <div class="container-footer">
+    <body class="background-colour">
+      <% if controller_name == "pages" && action_name == "home" %>
+      <% else %>
+          <%= render "shared/navbar" %>
+      <% end %>
 
-    <%= render "shared/flashes" %>
-    <%= yield %>
-    <%= render "shared/footer" %>
+      <%= render "shared/flashes" %>
+      <%= yield %>
+  </div>
+
+    <% if controller_name == "pages" && action_name == "home" %>
+    <% else %>
+      <%= render "shared/footer" %>
+    <% end %>
   </body>
 </html>

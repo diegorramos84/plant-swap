@@ -1,13 +1,42 @@
-<h1>Plant show page</h1>
-<div>
-  <%= cl_image_tag @plant.photo.key, height: 300, width: 400, crop: :fill %>
-  <p>Category: <%= @plant.category %></p>
-  <p>Plant type: <%= @plant.plant_type %></p>
-  <p>Description: <%= @plant.description %></p>
-  <p>Botanical name: <%= @plant.botanical_name %></p>
-  <p>Common name: <%= @plant.common_name %></p>
-  <p>Light conditions: <%= @plant.light_conditions %></p>
-  <p>Mature height: <%= @plant.mature_height %></p>
-  <p>Quantity: <%= @plant.quantity %></p>
-  <p>Indoor: <%= @plant.indoor %></p>
+<div class="container">
+  <br>
+    <form>
+    <input type="button" value="Back" onclick="history.back()" class="pink-btn">
+  </form>
+  <br>
+  <div class="plant-show-container">
+    <div class="container-label-img">
+      <% if @plant.photo.attached? %>
+        <%= cl_image_tag @plant.photo.key, height: 500, width: 600 %>
+      <% end %>
+    </div>
+    <div class="container-label-info">
+      <p><strong>Category:</strong> <%= @plant.category %></p>
+      <p><strong>Plant type:</strong> <%= @plant.plant_type %></p>
+      <p><strong>Description:</strong> <%= @plant.description %></p>
+      <% if @plant.indoor %>
+        <p>This is an indoor plant</p>
+      <% else %>
+        <p>This is an outdoor plant</p>
+      <% end %>
+      <p><strong>Botanical name:</strong> <%= @plant.botanical_name %></p>
+      <p><strong>Common name:</strong>  <%= @plant.common_name %></p>
+      <p><strong>Light conditions:</strong> <%= @plant.light_conditions %></p>
+      <p><strong>Mature height:</strong> <%= @plant.mature_height %>cm</p>
+      <p><strong>Quantity:</strong> <%= @plant.quantity %></p>
+      <%= link_to "Order this #{@plant.common_name}", new_plant_booking_path(@plant), class: "pink-btn" %>
+      <%= link_to "View #{@plant.user.first_name} #{@plant.user.last_name}'s profile", user_path(@user), class: "pink-btn" %></p>
+    </div>
+
+  </div>
+<br><br>
+  <div class="map-label">
+    <div
+      style="width: 100%; height: 600px;"
+      data-controller="map"
+      data-map-marker-value="<%= @marker.to_json %>"
+      data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+  </div>
+  <br><br>
 </div>

@@ -4,6 +4,9 @@
   grid-template-rows: auto 1fr auto;
 }
 
+.container-footer {
+  flex-grow: 1;
+}
 .footer {
   background: #1c5253;
   display: flex;
@@ -14,6 +17,8 @@
   color: rgba(0,0,0,0.3);
   width: 100%;
   bottom: 0;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 .footer-links {
   display: flex;

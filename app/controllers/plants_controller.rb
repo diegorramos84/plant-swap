@@ -18,13 +18,16 @@ class PlantsController < ApplicationController
     @plant = Plant.new(plant_params)
     @plant.user = current_user
     if @plant.save!
-      redirect_to plants_path(@plant)
+      redirect_to user_path(@plant.user)
     else
       render :new, status: :unprocessable_entity
     end
   end
 
   def show
+    @marker = [{ lat: @plant.user.geocode[0], lng: @plant.user.geocode[1] }]
+    @user = @plant.user
+    @bookings = @user.bookings
   end
 
   def edit
@@ -37,7 +40,7 @@ class PlantsController < ApplicationController
 
   def destroy
     @plant.destroy
-    redirect_to my_garden_path, status: :see_other
+    redirect_to user_path(@plant.user_id), status: :see_other
   end
 
   private
@@ -47,7 +50,7 @@ class PlantsController < ApplicationController
   end
 
   def plant_params
-    params.require(:plant).permit(:category, :type, :botanical_name, :common_name, :description, :light_conditions,
-                                  :mature_height, :quantity, :indoor)
+    params.require(:plant).permit(:category, :plant_type, :botanical_name, :common_name, :description, :light_conditions,
+                                  :mature_height, :quantity, :indoor, :photo, :user_id)
   end
 end
