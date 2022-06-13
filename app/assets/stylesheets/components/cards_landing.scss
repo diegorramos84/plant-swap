@@ -1,25 +1,23 @@
 .full-card {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  width: 306px;
   text-decoration: none;
   background-color: white;
   padding-bottom: 10px;
 }
 
-.plant-card {
+.plant-card-landing {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 24px;
   justify-content: center;
-  margin-top: 36px;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: 60px;
 }
 
-.plant-card h2 {
-  font-size: 16px;
+.plant-card-landing h2 {
+  font-size: 26px !important;
   font-weight: bold;
-  margin: 0;
   color: #1A3263;
-  font-size: 25px;
 }
 
 // .plant-card p {
@@ -30,7 +28,7 @@
 // }
 
 
-.plant-card .plant-info {
+.plant-card-landing .plant-info {
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -63,4 +61,9 @@
 
 .full-card:hover {
   box-shadow: 0 0 16px rgba(0,0,0,0.2);
+}
+
+.featured-plants h3 {
+  text-align: center;
+  margin-top: 100px;
 }
