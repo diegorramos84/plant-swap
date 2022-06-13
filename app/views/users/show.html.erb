@@ -14,17 +14,19 @@
       <h2>Reviews</h2>
       <% @user.plants.each do |plant| %>
         <% plant.bookings.each do |booking| %>
-          <% if booking.review != nil %>
-            <div class="star-rating">
-              <p><% booking.review.rating.to_i.times do %></p>
-                <i class="fa-solid fa-star"></i>
-              <% end %>
-            </div>
-            <br>
-            <p><%= booking.review.content %></p>
-          <% else %>
-            <p>No reviews exist</p>
-          <% end %>
+          <div class="review-card">
+            <% if booking.review != nil %>
+              <div class="star-rating">
+                <p><% booking.review.rating.to_i.times do %></p>
+                  <i class="fa-solid fa-star"></i>
+                <% end %>
+              </div>
+              <p><%= booking.review.content %></p>
+              <p>reviewed by <%= booking.user.username %></p>
+            <% else %>
+              <p>No reviews exist</p>
+            <% end %>
+          </div>
         <% end %>
       <% end %>
     </div>
