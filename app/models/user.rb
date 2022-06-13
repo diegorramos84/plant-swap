@@ -7,9 +7,6 @@ class User < ApplicationRecord
   has_many :bookings, dependent: :destroy
   has_one_attached :photo
   validates :username, uniqueness: true
-  scope :all_except, ->(user) { where.not(id: user) }
-  after_create_commit { broadcast_append_to "users" }
-  has_many :messages
   geocoded_by :postcode
   after_validation :geocode, if: :will_save_change_to_address?
 end

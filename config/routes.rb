@@ -15,8 +15,4 @@ Rails.application.routes.draw do
   resources :plants do
     resources :bookings, only: %i[new create]
   end
-
-  resources :rooms do
-    resources :messages
-  end
 end
