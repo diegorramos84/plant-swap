@@ -10,6 +10,10 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "room";
+
+// CSS for star rating
+@import "jquery-bar-rating/dist/themes/css-stars";
 
 .background-colour {
   background-color: #fff3ea;

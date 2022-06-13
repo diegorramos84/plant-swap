@@ -1,0 +1,29 @@
+.plant-card-garden {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 300px;
+  background-color: white;
+  text-decoration: none;
+}
+
+.your-garden .card-grid {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+  // justify-content: center;
+  // margin-top: 36px;
+  // flex-direction: row;
+}
+
+.profile-container {
+  // flex: 0;
+}
+
+.plant-card-garden:hover {
+  box-shadow: 0 0 16px rgba(0,0,0,0.2);
+}
+
+.plant-card-garden .garden-plant-info {
+  padding: 16px;
+}
