@@ -22,3 +22,21 @@
 .navbar-icons a:hover {
   opacity: 0.5;
 }
+
+.search-form-control  {
+  display: flex;
+  width: 350px;
+  height: 40px;
+}
+
+.search-form-control button {
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
