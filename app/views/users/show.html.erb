@@ -47,12 +47,14 @@
 
 <h2>Reviews</h2>
 
-<% @bookings.each do |booking| %>
-  <% if booking.review != nil %>
-    <p>Rating: <%= booking.review.rating.to_i %></p>
-    <p><%= booking.review.content %></p>
-  <% else %>
-    <p>No reviews exist</p>
+<% @user.plants.each do |plant| %>
+  <% plant.bookings.each do |booking| %>
+    <% if booking.review != nil %>
+      <p><%= booking.review.id %></p>
+      <p>Rating: <%= booking.review.rating.to_i %></p>
+      <p><%= booking.review.content %></p>
+    <% else %>
+      <p>No reviews exist</p>
+    <% end %>
   <% end %>
-  <hr>
 <% end %>
