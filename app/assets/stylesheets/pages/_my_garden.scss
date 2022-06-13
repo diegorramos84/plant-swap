@@ -10,8 +10,16 @@
 .star-rating {
   display: flex;
   color: gold;
+  margin-bottom: 8px;
 }
 
 .review-card {
   background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 16px;
+  margin-bottom: 16px;
+
+  & p:last-child {
+    margin-bottom: 0;
+  }
 }
