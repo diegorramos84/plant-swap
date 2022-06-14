@@ -25,8 +25,8 @@ class PlantsController < ApplicationController
   end
 
   def show
-    @marker = [{ lat: @plant.user.geocode[0], lng: @plant.user.geocode[1] },
-               { lat: current_user.geocode[0], lng: current_user.geocode[1] }]
+    @marker = [{ lat: @plant.user.geocode[0], lng: @plant.user.geocode[1], image_url: helpers.asset_url("spider-plant.png") },
+               { lat: current_user.geocode[0], lng: current_user.geocode[1], image_url: helpers.asset_url("house.png") }]
     @user = @plant.user
     @bookings = @user.bookings
   end
