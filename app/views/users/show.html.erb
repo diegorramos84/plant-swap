@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+<div class="container-garden">
+  <div class="profile-container col-4">
+    <%# <div class="profile"> %>
+      <div class="profile-image">
+        <% if @user.photo.attached? %>
+          <%= cl_image_tag @user.photo.key, width: 150 %>
+          <%# <% else %>
+            <%# <div class="profile_image" align-center > %>
+              <%# <%= image_tag "https://res.cloudinary.com/lardocelar/image/upload/v1654685294/user_placeholder_kbf1mr.png" %>
+            <%# </div> %>
+        <% end %>
+      </div>
+      <div class="profile-text">
+        <% if @user == current_user %>
+          <%# <h1 class="text-center mb-4 mt-4"><i class="fa-solid fa-seedling"> </i> <%="Your profile" <i class="fa-solid fa-seedling"></i></h1> %>
+          <h2 class="mb-4 mt-4">Your profile</h2>
+          <h4 class="h3-profile">Average rating <%= @user.average_rating %> </h4>
+        <% else %>
+          <h2 class="first-name"><%= @user.first_name %>'s profile</h2>
+          <h4>Rating <%= @user.average_rating %> </h4>
+        <% end %>
+      </div>
+    <%# </div> %>
+
+    <div class="reviews">
+      <h4 class="h4-reviews">Last reviews</h4>
+      <div class="review-card">
+        <% @user.plants.each do |plant| %>
+          <% plant.bookings.each do |booking| %>
+            <% if booking.review != nil %>
+              <p><%= booking.review.id %></p>
+              <p>Rating: <%= booking.review.rating.to_i %></p>
+              <p><%= booking.review.content %></p>
+            <% else %>
+              <p>No reviews exist</p>
+=======
 <div class="container-xxl mt-4">
   <div class="row">
     <div class="profile-container col-4">
@@ -26,12 +63,41 @@
                 <p><%= booking.review.content %></p>
                 <p>reviewed by <%= booking.user.username %></p>
               </div>
+>>>>>>> main
             <% end %>
           <% end %>
         <% end %>
       </div>
     </div>
 
+<<<<<<< HEAD
+  <div class="your-garden col-8">
+    <div class="your-garden-heading">
+      <% if @user == current_user %>
+        <h1 class="text-center mb-4 mt-4 garden"><i class="fa-solid fa-leaf"></i> Your garden <i class="fa-solid fa-leaf"></i></h1>
+      <% else %>
+        <h1 class="text-center mb-4 mt-4 garden"><%= @user.first_name %>'s garden</h1>
+      <% end %>
+    </div>
+    <div class="card-grid">
+      <% @user.plants.each do |plant| %>
+        <div class="plant-card-garden mb-3">
+          <%= link_to plant_path(plant) do %>
+            <div class="plant-garden-picture">
+              <% if plant.photo.attached? %>
+                <%= cl_image_tag plant.photo.key, height: 250, width: 300 %>
+              <% end %>
+            </div>
+          <% end %>
+          <div class="garden-plant-info">
+            <p><strong>Plant name: </strong><%= plant.common_name %></p>
+            <p><strong>Plant type: </strong><%= plant.plant_type %></p>
+            <p><strong>Amount of plants left: </strong><%= plant.quantity%></p>
+            <div class="garder-user-actions">
+              <% if plant.user == current_user %>
+                <%= link_to edit_plant_path(plant) do %>
+                  <i class="fa-solid fa-pen-to-square"></i>
+=======
     <div class="your-garden col-8">
       <div class="your-garden-heading">
         <% if @user == current_user %>
@@ -47,6 +113,7 @@
               <div class="plant-garden-picture">
                 <% if plant.photo.attached? %>
                   <%= cl_image_tag plant.photo.key, height: 250, width: 300 %>
+>>>>>>> main
                 <% end %>
               </div>
             <% end %>
