@@ -11,6 +11,9 @@
 
 .navbar-pages .navbar-brand img {
   width: 60px;
+  margin-left: 70px;
+  margin-top: 10px;
+  margin-right: 30px;
 }
 
 .navbar-icons a {
@@ -38,4 +41,9 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.icon-and-search {
+  display: flex;
+  justify-content: center;
 }

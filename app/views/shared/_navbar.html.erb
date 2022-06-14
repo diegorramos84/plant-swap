@@ -1,20 +1,15 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-pages">
-  <div class="container-xxl">
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "shared/botanic.png" %>
+ <div class="container-xxl">              
+    <div class="icon-and-search">
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag "shared/botanic.png" %>
     <% end %>
-
-    <div class="index-search">
-      <%= simple_form_for :search_by_name_type_and_category, url: plants_path, method: :get do |f| %>
-        <div class="search-form-control form-group">
-            <input class="form-control string required" placeholder="Search for plants..." type="text" name="[query]" id="search_query" />
-            <div class="search-btn">
-              <button name="button" type="submit" class="pink-btn">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
-        </div>
-      <% end %>
+      <div class="search-box">
+        <%= simple_form_for :search_by_name_type_and_category, url: plants_path, method: :get do |f| %>
+          <button class="btn-search"><i class="fas fa-search"></i></button>
+          <input class="input-search string required" type="text" name="[query]" id="search_query" placeholder="Type to search..."/>
+        <% end %>
+      </div>
     </div>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +18,6 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <div class="navbar-icons">
-        <%# <a href=""><i class="fa-solid fa-magnifying-glass"></i></a> %>
         <a href=""><i class="fa-solid fa-message"></i></a>
         <%= link_to "View plants", plants_path, class: "navbar-btn" %>
         <%# <a href=""><i class="fa-solid fa-basket-shopping"></i></a> %>

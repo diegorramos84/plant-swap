@@ -1,65 +1,56 @@
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search {
+.search-box{
+  width: fit-content;
+  height: fit-content;
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  margin-top: 20px;
 }
-.search svg {
-  height: 6rem;
-  padding: 1.5rem;
-  position: absolute;
-  cursor: pointer;
-}
-.search__icon {
-  fill: #767b91;
-  z-index: 99;
-}
-.search__close {
-  right: 0;
-  fill: white;
-  transition: 500ms fill ease-in;
-}
-.search__delete {
-  fill: #c7ccdb;
-  right: 5rem;
-  display: none;
-}
-.search input {
-  box-shadow: 0 0 10px 5px #e1e5ee;
-  border: none;
-  border-radius: 50%;
-  padding: 1.75rem 3rem;
-  font-family: inherit;
-  font-size: 2rem;
-  color: #767b91;
+
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
   outline: none;
-  width: 2rem;
-  transition: 500ms width ease-in-out, 500ms padding ease-in-out, 500ms border-radius ease-in-out;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #FFB7BC;
+  padding-right: 40px;
+  color: black;
 }
-.search input:not(:placeholder-shown) ~ .search__delete {
-  display: block;
+.input-search::placeholder{
+  color: black;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
-.search-open input {
-  width: 34rem;
-  padding: 1.5rem 11rem 1.5rem 6rem;
-  border-radius: 0.2rem;
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: white;
+  background-color:transparent;
+  pointer-events: painted;
 }
-.search-open svg.search__close {
-  fill: #767b91;
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
