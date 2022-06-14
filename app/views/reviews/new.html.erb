@@ -1,6 +1,8 @@
 <h1>Review your experience</h1>
-<%= simple_form_for [@booking, @review] do |f| %>
-  <%= f.input :rating, collection: (1..5), label: "Rating", id: "review_rating" %>
-  <%= f.input :content, label: "Comments" %>
-  <%= f.submit "Submit your review", class: "btn btn-primary" %>
-<% end %>
+<div data-controller="star-rating">
+  <%= simple_form_for [@booking, @review] do |f| %>
+    <%= f.input :rating, collection: (1..5), label: "Rating", id: "review_rating" %>
+    <%= f.input :content, label: "Comments" %>
+    <%= f.submit "Submit your review", class: "btn btn-primary" %>
+  <% end %>
+</div>

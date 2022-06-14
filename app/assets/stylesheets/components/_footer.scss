@@ -10,11 +10,7 @@
 .footer {
   background-color: #fae1ce;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 65px;
-  padding: 0px 24px;
   color: rgba(0,0,0,0.3);
   width: 100%;
   bottom: 0;
@@ -24,7 +20,6 @@
 .footer-links {
   display: flex;
   align-items: center;
-  margin-left: 87px;
 }
 .footer-links a {
   color: black;
@@ -37,6 +32,12 @@
 }
 
 .footer-copyright {
-  margin-right: 87px;
   color: black;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }

@@ -136,7 +136,7 @@ photo = URI.open(url)
 @plant8 = Plant.create!(
   user_id: @user1[:id],
   category: "plantlet",
-  plant_type: "Evergreen, flowering perennial, climber",
+  plant_type: "Flowering perennial",
   botanical_name: "Clematis 'Hagley hybrid'",
   common_name: "Clematis",
   description: "Clematis 'Hagley hybrid' is a great climber and flowers from late spring to early autumn with large
