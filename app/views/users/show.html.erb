@@ -1,6 +1,7 @@
 <div class="container-xxl mt-4">
   <div class="row">
-    <div class="profile-container col-4">
+    <div class="col-4">
+    <div class="profile-container">
       <div class="profile">
         <div class="profile-image d-flex justify-content-center">
           <% if @user.photo.attached? %>
@@ -39,6 +40,7 @@
         <% end %>
       </div>
     </div>
+    </div>
 
     <div class="your-garden col-8">
       <div class="your-garden-heading">
@@ -67,7 +69,7 @@
                   <%= link_to edit_plant_path(plant) do %>
                     <i class="fa-solid fa-pen-to-square"></i>
                   <% end %>
-                  <%= link_to plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+                  <%= link_to plant_path(plant), data: {turbo_method: :delete, controller: "sweet-alert", action: "click->sweet-alert#open", sweet_alert_plant_value: "#{plant.id}"} do %>
                     <i class="fa-solid fa-trash-can"></i>
                   <% end %>
                 <% end %>

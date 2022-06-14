@@ -15,3 +15,6 @@ application.register("map", MapController)
 
 import StarRatingController from "./star_rating_controller.js"
 application.register("star-rating", StarRatingController)
+
+import SweetAlertController from "./sweet_alert_controller.js"
+application.register("sweet-alert", SweetAlertController)

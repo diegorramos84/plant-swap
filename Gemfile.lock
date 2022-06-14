@@ -253,6 +253,8 @@ GEM
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
     strscan (3.0.3)
+    sweetalert2 (7.25.6)
+      railties (>= 3.1.0)
     thor (1.2.1)
     tilt (2.0.10)
     timeout (0.3.0)
@@ -310,6 +312,7 @@ DEPENDENCIES
   simple_form!
   sprockets-rails
   stimulus-rails
+  sweetalert2
   turbo-rails
   tzinfo-data
   web-console
