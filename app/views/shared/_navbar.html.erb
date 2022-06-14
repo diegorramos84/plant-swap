@@ -19,10 +19,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <div class="navbar-icons">
         <%# <a href=""><i class="fa-solid fa-message"></i></a> %>
-        <%= link_to "View plants", plants_path, class: "navbar-btn" %>
+        <%= link_to "View plants", plants_path, class: "navbar-btn border" %>
         <%# <a href=""><i class="fa-solid fa-basket-shopping"></i></a> %>
-        <%= link_to "List plant", new_plant_path, class: "navbar-btn" %>
-        <%= link_to "Home", root_path, class: "navbar-btn" %>
+        <%= link_to "List plant", new_plant_path, class: "navbar-btn border" %>
+        <%= link_to "Home", root_path, class: "navbar-btn border" %>
       </div>
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
