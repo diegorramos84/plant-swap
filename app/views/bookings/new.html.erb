@@ -1,13 +1,12 @@
-<div class="container">
-  <br>
-    <h1>Confrim your order with <%= @plant.user.first_name %> <%= @plant.user.last_name %></h1>
-  <br>
+<div class="container-xxl">
+  <br />
+    <h1>Confirm your order with <%= @plant.user.first_name %> <%= @plant.user.last_name %></h1>
+  <br />
   <div>
      <%= render "shared/new_booking_label" %>
   </div>
-  <br><br>
-  <form>
-    <input type="button" value="Back" onclick="history.back()" class="pink-btn" style="margin-left: 5%;">
-  </form>
-  <br>
+  <br />
+  <br />
+  <input type="button" value="Back" onclick="history.back()" class="pink-btn" />
+  <br /><br>
 </div>

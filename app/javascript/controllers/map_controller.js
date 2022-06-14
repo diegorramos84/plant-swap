@@ -11,18 +11,31 @@ export default class extends Controller {
 
       this.map = new mapboxgl.Map({
         container: this.element,
-        style: "mapbox://styles/mapbox/streets-v11"
+        style: "mapbox://styles/mapbox/streets-v11",
+        center:[ this.markerValue[1]["lat"], this.markerValue[1]["lng"]]
       })
-      console.log(this.markerValue)
 
-      this.#addMarkerToMap()
+      // const start = [this.markerValue[1]["lat"], this.markerValue[1]["lng"]]
+      // const endCoords = [this.markerValue[0]["lat"], this.markerValue[0]["lng"]]
+      this.#addMarkersToMap()
       this.#fitMapToMarker()
   }
-  #addMarkerToMap() {
+
+  #addMarkersToMap() {
     this.markerValue.forEach((marker) => {
-      new mapboxgl.Marker()
-        .setLngLat([ marker.lng, marker.lat ])
-        .addTo(this.map)
+
+      // Create a HTML element for your custom marker
+      const customMarker = document.createElement("div")
+      customMarker.className = "marker"
+      customMarker.style.backgroundImage = `url('${marker.image_url}')`
+      customMarker.style.backgroundSize = "contain"
+      customMarker.style.width = "35px"
+      customMarker.style.height = "35px"
+
+      // Pass the element as an argument to the new marker
+      new mapboxgl.Marker(customMarker)
+        .setLngLat([marker.lng, marker.lat])
+        .addTo(this.map) // adds the custom marker to the map
     })
   }
 
@@ -31,4 +44,5 @@ export default class extends Controller {
     this.markerValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
     this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
   }
+
 }

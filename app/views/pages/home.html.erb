@@ -1,12 +1,82 @@
-<div class="landing-nav">
-  <%= render "shared/landing_navbar" %>
-    <%= image_tag "shared/logo.png" %>
+<div class="home-container d-flex flex-column justify-content-center align-items-center">
+  <%= image_tag "shared/logo.png", class: "logo p-2" %>
+  <div class="landing-btns">
+    <%= link_to "Browse plants", plants_path, class: "pink-btn p-4" %>
+  </div>
 </div>
 
-<div class="home-container">
-  <%= image_tag "shared/landing_description.png" %>
-  <div class="landing-btns">
-    <%= link_to "List plant", new_plant_path, class: "pink-btn" %>
-    <%= link_to "Browse plants", plants_path, class: "pink-btn" %>
+  <div class="landing-info">
+    <h2>Making the world a better place</h2><br>
+    <div class="landing-icon p-5">
+      <div class="icon-info">
+        <div class="landing-img" style="background-image: url('<%= asset_path("shared/plants.png") %>');">
+        </div><br><br>
+        <p><strong>Reduce plant waste</strong> - By donating your plant you will help reduce unecessary waste and give your plants a new home</p>
+      </div>
+
+      <div class="icon-info">
+        <div class="landing-img" style="background-image: url('<%= asset_path("shared/pruners.png") %>');">
+        </div><br><br>
+        <p><strong>Recycle you plant cuttings</strong> - Most plants are able to be cut and re-planted, giving them the oppertunity for a new life to flurish </p>
+      </div>
+
+      <div class="icon-info">
+        <div class="landing-img" style="background-image: url('<%= asset_path("shared/save-the-planet.png") %>');">
+        </div><br><br>
+        <p><strong>Reuse others plant cuttings</strong> - Connect with people in your community over your love of plants and expland your plant garden</p>
+      </div>
+    </div>
+  </div> <br><br>
+
+  <div class="plant-facts">
+    <h2>Why should you have plants in your home?</h2>
+    <div class="facts-content">
+      <div class="facts-imgs">
+        <%= image_tag "shared/facts-img.jpg" %>
+        <%= image_tag "shared/more-plant-facts.jpg" %>
+      </div>
+      <div class="facts">
+        <li>They help purify air</li>
+        <p>They have the ability to cleanse the air from toxic chemicals such as formaldehyde and benzene which are usually found in paint, cigarettes, vinyl and solvents. Plants can also raise the air’s humidity by releasing water as moisture vapor – this can protect us from getting respiratory problems, dry coughs and sore throat.</p>
+        <li>They can reduce stress</li>
+        <p>Feeling stressed at work? Experts recommend putting potted plants near your work desk to lower stress levels and fatigue. Studies found how having plants in offices helps lowered people’s heart rate, blood pressure and respiratory problems. This is why it’s a great idea to keep potted plants where you work as it will reduce stress and anxiety leading to better productivity.</p>
+        <li>They can help you sleep better</li>
+        <p>The benefits of indoor plants in your living quarters don’t stop at preventing respiratory disorders and reducing stress. Indoor plants like Jasmine, Lavender, Aloe Vera and Gardenia can increase the quality of one’s sleep when placed in your bedroom. These plants give off a gentle soothing effect to one’s body and mind which can lower heart rate, blood pressure and stress levels. It also reduces anxiety levels leading to better mood and quality of sleep.</p>
+        <li>They can help fight colds</li>
+        <p>Plant’s ability to humidify the air and decrease dust can help fight virus that cause colds and coughs. Various studies in horticulture discovered how adding plants to office and hospital settings decreased cold, fatigue, headaches and sore throats. Some plants like eucalyptus has the ability to clear congestion from one’s system.</p>
+        <li>They improve wellbeing</li>
+        <p>It goes without saying that a house with plants looks more refreshing than one without. I mean if I was to pick a house to spend my vacation in – I’d pick a cabin with the most flowers and indoor plants around its vicinity. Aside from how its beauty can make you feel happy, culturally, plants are known to have a strong spiritual link with us. Plants are even part of some of our major life events, like weddings and funerals.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="featured-plants">
+  <h3>Featured plants</h3>
+  <div class="plant-card-landing">
+    <% @plants.first(4).each do |plant| %>
+      <%= link_to plant_path(plant), class: "text-decoration-none" do %>
+        <div class="full-card">
+          <% if plant.photo.attached? %>
+            <%= cl_image_tag plant.photo.key, :width=>306, :height=>250, :crop=>"fill" %>
+          <% end %>
+          <div class= "plant-info">
+            <h4>Common name: <%= plant.common_name %></h4>
+            <h4>Category: <%= plant.category %></h4>
+            <h4>Type: <%= plant.plant_type %></h4>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+
+<div class="log-in-banner">
+  <%= image_tag "shared/lets-swap.jpg" %>
+  <div class="banner-info">
+    <h3>Sign up with us today to start swapping plants</h3>
+    <p>PlantSwap are here to connect everyone together with thier love for plants under one big unbarella</p>
+    <%= link_to "Log In", new_user_session_path, class: "pink-btn p-3" %>
+    <%= link_to "Register", new_user_registration_path, class: "pink-btn p-3" %>
   </div>
 </div>

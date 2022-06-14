@@ -11,6 +11,33 @@
 @import "components/index";
 @import "pages/index";
 
+// CSS for star rating
+@import "jquery-bar-rating/dist/themes/css-stars";
+
 .background-colour {
   background-color: #fff3ea;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-user-action a {
+  color: #1C5252;
+  font-size: larger;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 65px;
+}
+
+h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+}
+
+h3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
 }

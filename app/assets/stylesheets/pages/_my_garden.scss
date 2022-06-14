@@ -1,0 +1,56 @@
+.your-garden-heading {
+  background: url('image/kindpng_1704625.png');
+
+  .fa-solid {
+    font-size: 28px;
+  }
+}
+
+.profile-container {
+  background-color: #FFB7BC;
+  padding: 18px;
+  margin-bottom: 16px;
+  // margin-left: 16px;
+
+  .fa-solid {
+    font-size: 28px;
+  }
+}
+
+.garden-plant-info .garder-user-actions {
+  display: flex;
+  justify-content: space-between;
+
+  .fa-solid {
+  text-decoration: none;
+  font-size: 15px;
+  }
+}
+
+.profile img {
+  // display: block;
+  width: 150px;
+  border-radius: 50%;
+}
+
+
+.first-name {
+  padding-top: 8px;
+}
+
+.star-rating {
+  display: flex;
+  color: gold;
+  margin-bottom: 8px;
+}
+
+.review-card {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 16px;
+  margin-bottom: 16px;
+
+  & p:last-child {
+    margin-bottom: 0;
+  }
+}

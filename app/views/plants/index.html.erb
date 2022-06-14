@@ -1,30 +1,9 @@
-<div class="container">
-  <div class="mt-3">
-  <br>
-    <div class="index-search">
-      <h2 style="margin-right: 20px;">Search for a plant</h2>
-      <%= simple_form_for :search_by_name_type_and_category, url: plants_path, method: :get do |f| %>
-        <div class="search-form-control form-group">
-          <input class="form-control string required" type="text" name="[query]" id="search_query" /><br>
-         <button name="button" type="submit" class="pink-btn">
-           <i class="fas fa-search"></i> Search
-         </button>
-        </div>
-      <% end %>
-    </div>
-    <p>_______________________________________________________________________________________________________________________________________________________</p>
-    <br>
-    <h1 style= "text-align: center;">Check out the plants</h1><br>
-    <%= link_to "Swap a plant", new_plant_path, class: "pink-btn" %>
-    <hr>
-    <%= render 'shared/cards' %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= asset_path("shared/index_banner_two.png") %>');">
+  <div class="container">
+    <h1>Check out the plants</h1>
   </div>
 </div>
-  <%# <% @plants.each do |plant| %>
-    <%# <li><%= link_to plant.common_name, plant_path(plant) %>
-    <%# <%= link_to "See user's profile", user_path(plant.user) %>
-    <%# <% if plant.photo.attached? %>
-      <%# <%= cl_image_tag plant.photo.key, height: 300, width: 400, crop: :fill %>
-    <%# <% end %>
-    <%# <hr> %>
-  <%# <% end %>
+
+<div class="container">
+    <%= render 'shared/cards' %>
+</div>

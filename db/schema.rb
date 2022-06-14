@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_08_152528) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_13_193723) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -55,8 +55,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_08_152528) do
 
   create_table "chatrooms", force: :cascade do |t|
     t.string "name"
+    t.bigint "booking_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["booking_id"], name: "index_chatrooms_on_booking_id"
   end
 
   create_table "messages", force: :cascade do |t|
@@ -118,6 +120,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_08_152528) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "bookings", "plants"
   add_foreign_key "bookings", "users"
+  add_foreign_key "chatrooms", "bookings"
   add_foreign_key "messages", "chatrooms"
   add_foreign_key "messages", "users"
   add_foreign_key "plants", "users"

@@ -9,20 +9,24 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC&family=Hind+Madurai:wght@300&family=Indie+Flower&family=Manrope:wght@200&family=Nanum+Gothic&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
 
-  <body class="background-colour">
-    <% if controller_name == "pages" && action_name == "home" %>
-    <% else %>
-        <%= render "shared/navbar" %>
-    <% end %>
+  <div class="container-footer">
+    <body class="background-colour">
+      <% if controller_name == "pages" && action_name == "home" %>
+      <% else %>
+          <%= render "shared/navbar" %>
+      <% end %>
 
-    <%= render "shared/flashes" %>
-    <%= yield %>
-
-    <% if controller_name == "pages" && action_name == "home" %>
-    <% else %>
+      <%= render "shared/flashes" %>
+      <%= yield %>
+  </div>
       <%= render "shared/footer" %>
-    <% end %>
   </body>
 </html>

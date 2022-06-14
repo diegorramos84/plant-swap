@@ -8,7 +8,11 @@ class ReviewsController < ApplicationController
     @booking = Booking.find(params[:booking_id])
     @review = Review.new(review_params)
     @review.booking = @booking
-    @review.save
+    if @review.save!
+      redirect_to user_path(@booking.plant.user)
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def show

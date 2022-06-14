@@ -70,6 +70,11 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
   integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
 
+"@rails/actioncable@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.5.tgz#a889f25b0c13ea0215d747e32fa3d1a52967f17b"
+  integrity sha512-79sIsTpIoHnJ6pRHKaC6h5NMRpY+VZD4mqOKN/035X1ehxHgToDWvgMZ4jV5y1qeObg4enmNESmgeKoImYGzOw==
+
 "@rails/actioncable@^7.0":
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.0.3.tgz#71f08e958883af64f6a20489318b5e95d2c6dc5b"
@@ -526,6 +531,18 @@ jest-worker@^27.4.5:
     "@types/node" "*"
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
+
+jquery-bar-rating@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/jquery-bar-rating/-/jquery-bar-rating-1.2.2.tgz#9594d662cff9deb0fe7b372511bb2492a436f392"
+  integrity sha512-0OtYCrgDzyc3FQ6r08Twns35t1bKd4V/9+Nberg3Idg3ZpBw2dVre8Hut0w3sbekm391desWxpbKFKSPzuk81w==
+  dependencies:
+    jquery ">=1.7.2"
+
+jquery@>=1.7.2:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
 
 json-parse-even-better-errors@^2.3.1:
   version "2.3.1"

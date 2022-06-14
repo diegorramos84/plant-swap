@@ -59,7 +59,7 @@ photo = URI.open(url)
 @plant4 = Plant.create!(
   user_id: @user4[:id],
   category: "plant",
-  plant_type: "",
+  plant_type: "Other",
   botanical_name: "Euphorbia",
   common_name: "Euphorbia",
   description: "The euphorbia looks like the quintessential cactus, although it’s technically not one
@@ -79,7 +79,7 @@ photo = URI.open(url)
 @plant5 = Plant.create!(
   user_id: @user5[:id],
   category: "plantlet",
-  plant_type: "",
+  plant_type: "Other",
   botanical_name: "Scindapsus pictus",
   common_name: "Satin pothos",
   description: "",
@@ -136,7 +136,7 @@ photo = URI.open(url)
 @plant8 = Plant.create!(
   user_id: @user1[:id],
   category: "plantlet",
-  plant_type: "Evergreen, flowering perennial, climber",
+  plant_type: "Flowering perennial",
   botanical_name: "Clematis 'Hagley hybrid'",
   common_name: "Clematis",
   description: "Clematis 'Hagley hybrid' is a great climber and flowers from late spring to early autumn with large

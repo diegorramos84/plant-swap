@@ -1,0 +1,17 @@
+.listing-card-review {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 16px;
+  padding: 21px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 160px;
+  background-image: url("shared/review_card");
+  background-size: contain;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.listing-card-review h1 {
+  text-align: center;
+}

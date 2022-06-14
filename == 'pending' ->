@@ -1,0 +1,1198 @@
+[33mcommit 9e4962d28dd1776fb435eaa5670b9cf4c5422d1e[m[33m ([m[1;36mHEAD -> [m[1;32mmy-bookings-tabs[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: e57822c 78b6291
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Sun Jun 12 16:28:21 2022 +0100
+
+    Merge pull request #88 from diegorramos84/updating-user-profile
+    
+    Updated user profile
+
+[33mcommit e57822c704ec0017c3940d1083519fc837f8eae9[m
+Merge: 33d0400 2a387af
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Sun Jun 12 12:16:52 2022 +0100
+
+    Merge pull request #90 from diegorramos84/footer-fix
+    
+    bug-fix - footer changes were affecting landing page
+
+[33mcommit 2a387afae324fe986a25ebcb06fa9751387333f7[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Sun Jun 12 12:16:27 2022 +0100
+
+    bug-fix - footer changes were affecting landing page
+
+[33mcommit 33d0400bb0d578271ddda7bf657287ea05ce4efd[m
+Merge: 30d60e4 11bc04b
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Sun Jun 12 12:10:31 2022 +0100
+
+    Merge pull request #89 from diegorramos84/landing-page-bg
+    
+    main not taking the changes
+
+[33mcommit 11bc04b9d53f958ccc5ae453a274977ac896e105[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Sun Jun 12 12:09:36 2022 +0100
+
+    main not taking the changes
+
+[33mcommit 30d60e4649cb1cb5642e43cab3b86e98bf85c750[m
+Merge: 4739ea6 ffdefb0
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Sun Jun 12 11:51:00 2022 +0100
+
+    Merge pull request #85 from diegorramos84/fixing-footer
+    
+    fix flying footer - added container around the whole page besides foo…
+
+[33mcommit 4739ea6a67456e835abab5460ba461be4e9c9e0f[m
+Merge: ca0919d 140c02d
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Sun Jun 12 11:50:49 2022 +0100
+
+    Merge pull request #86 from diegorramos84/landing-page-bg
+    
+    fix landing page to larger screens - add bootstrap flex box to logo a…
+
+[33mcommit 78b629181604251acdeb88fcb085c0e2d2ba44b0[m[33m ([m[1;31morigin/updating-user-profile[m[33m, [m[1;32mupdating-user-profile[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Sun Jun 12 11:23:35 2022 +0100
+
+    Updated user profile
+
+[33mcommit ca0919d92f0ef430a2b86ae3a6e03439dea98818[m
+Merge: 2f5d4db 7c2e54c
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Sat Jun 11 19:02:51 2022 +0100
+
+    Merge pull request #87 from diegorramos84/plant-show-changes
+    
+    Plant show changes
+
+[33mcommit 7c2e54cc1127303895acd69692612fe269de9c0a[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Sat Jun 11 18:57:11 2022 +0100
+
+    moved placement of plant details and added plant owner button
+
+[33mcommit 9127548cfea3f54c810f73c553c2c571a5c8088a[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Sat Jun 11 18:30:49 2022 +0100
+
+    widened map on plant show page so it's across the bottom of the page
+
+[33mcommit 140c02db35b04a83369a7fa55982c97223179b8e[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Sat Jun 11 17:36:14 2022 +0100
+
+    fix landing page to larger screens - add bootstrap flex box to logo and buttons
+
+[33mcommit ffdefb0d31d794c8924418e56bb0562f6887173f[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Sat Jun 11 15:30:31 2022 +0100
+
+    fix flying footer - added container around the whole page besides footer and flexed the container  it into a colum
+
+[33mcommit 2f5d4db4394b67c1b9a60b397e88c30c21cf8799[m
+Merge: 7c1a5fa 35d7bf6
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 15:58:26 2022 +0100
+
+    Merge pull request #84 from diegorramos84/fix2
+    
+    added my bookings to dropdow
+
+[33mcommit 35d7bf6851bc2b2a5d72fec383ebb1003376560d[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 15:57:50 2022 +0100
+
+    added my bookings to dropdow
+
+[33mcommit 7c1a5fae9a4fb0a1c31def5da58fc519296bb0c9[m
+Merge: f38909c e0343a5
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 15:45:38 2022 +0100
+
+    Merge pull request #83 from diegorramos84/fixes
+    
+    bug fixes
+
+[33mcommit e0343a56b10853428aeb1d7eb35dc95e53d25e49[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 15:44:37 2022 +0100
+
+    bug fixes
+
+[33mcommit f38909cf10557c26d5f8a1e6c87b89fad117da1c[m
+Merge: 61d4713 32135de
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 15:33:51 2022 +0100
+
+    Merge pull request #82 from diegorramos84/fix-profile-user
+    
+    fix user
+
+[33mcommit 32135de17f43ede17e2f78de941afe4789a37338[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 15:33:22 2022 +0100
+
+    fix user
+
+[33mcommit 61d4713af446f4ad1269c0967a806f2d6f7c8eda[m
+Merge: a52d79d 8f266f0
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Fri Jun 10 15:26:27 2022 +0100
+
+    Merge pull request #81 from diegorramos84/fix_form_dropdowns
+    
+    fixed again
+
+[33mcommit 8f266f026f7035166fb00b0e61a5e7752b2cbd1d[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Fri Jun 10 15:26:05 2022 +0100
+
+    fixed again
+
+[33mcommit a52d79da7d7e58071bbd6c821bfda9d48a77ad87[m
+Merge: 8f29690 7bcee54
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 15:17:01 2022 +0100
+
+    Merge pull request #79 from diegorramos84/random-profile
+    
+    removed seb pic
+
+[33mcommit 7bcee540b56728ccc0faa134ce642147a2a588a7[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 15:16:07 2022 +0100
+
+    removed seb pic
+
+[33mcommit 8f296909b982b5cc8d9749f669cd40360b43b96a[m
+Merge: 0b086e6 96cbe61
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Fri Jun 10 15:00:35 2022 +0100
+
+    Merge pull request #78 from diegorramos84/my-garden-nav
+    
+    added my garden as dropdown field in navbar
+
+[33mcommit 96cbe61cd807df4e26a385331261218c2625f0fe[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Fri Jun 10 15:00:06 2022 +0100
+
+    added my garden as dropdown field in navbar
+
+[33mcommit 0b086e67759aa1eba33c762a94f6f28043abd9d9[m
+Merge: 6d34b36 1c8af6c
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Fri Jun 10 14:51:33 2022 +0100
+
+    Merge pull request #77 from diegorramos84/fix_booking_page
+    
+    commented out the drop down quantity bar
+
+[33mcommit 1c8af6c77cd410ac9125acce97f7d7acfc23ff53[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Fri Jun 10 14:50:59 2022 +0100
+
+    commented out the drop down quantity bar
+
+[33mcommit 6d34b36606266fd4624db1ee36c19be89552198e[m
+Merge: 10ad00e e34551d
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 14:50:01 2022 +0100
+
+    Merge pull request #76 from diegorramos84/add-profile-link
+    
+    fix user_profile
+
+[33mcommit e34551d89e668a137b6bec5266a4b113cc4127f1[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 14:49:27 2022 +0100
+
+    fix user_profile
+
+[33mcommit 10ad00edb210277d42904f6666e9bd69d4e296e0[m
+Merge: 829b369 875b38f
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Fri Jun 10 14:44:05 2022 +0100
+
+    Merge pull request #75 from diegorramos84/add-edit-button
+    
+    added photo field to new plant form
+
+[33mcommit 875b38f6938cff10bd605e587bb24a75b394b4b3[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Fri Jun 10 14:43:13 2022 +0100
+
+    added photo field to new plant form
+
+[33mcommit 829b3694b267c480dd5262ca10d6730917ead64a[m
+Merge: 594e2c4 90fd59d
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Fri Jun 10 14:32:54 2022 +0100
+
+    Merge pull request #74 from diegorramos84/fix_form
+    
+    fixed dropdown sizing
+
+[33mcommit 90fd59d7626c6477746e98e65d0682b4b1e74e81[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Fri Jun 10 14:32:34 2022 +0100
+
+    fixed dropdown sizing
+
+[33mcommit 594e2c45600d84967f41f2124dfef4ae052ca2b6[m
+Merge: f2591b8 3b341bb
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 14:23:50 2022 +0100
+
+    Merge pull request #73 from diegorramos84/add-seed
+    
+    added more plants - total of 8 now
+
+[33mcommit f2591b848142eed3caf396f1379305e57845e2f8[m
+Merge: 85c6bbc 3bc5a8e
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Fri Jun 10 14:20:20 2022 +0100
+
+    Merge pull request #72 from diegorramos84/add-plant-form-change
+    
+    added dropdown selection in new plant listing form
+
+[33mcommit 3bc5a8ef4e09835ce0752a4e3d35fe7eb807c876[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Fri Jun 10 14:18:07 2022 +0100
+
+    added dropdown selection in new plant listing form
+
+[33mcommit 85c6bbc0c750eaf11a34cc5659122c0230fa7ed8[m
+Merge: d46aaa8 f571a7b
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Fri Jun 10 14:17:39 2022 +0100
+
+    Merge pull request #71 from diegorramos84/edit_searchbar
+    
+    rearranged the search bar
+
+[33mcommit f571a7b1b5281b0bb5c0423b95cd3bb15586ebea[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Fri Jun 10 14:17:16 2022 +0100
+
+    rearranged the search bar
+
+[33mcommit 3b341bb0e96c98881766ababdcc030af09e08ad8[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Fri Jun 10 14:17:09 2022 +0100
+
+    added more plants - total of 8 now
+
+[33mcommit d46aaa8970853c1fd14ff727be7881ae13f5ed4d[m
+Merge: 7641a36 c4cba36
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Fri Jun 10 12:43:24 2022 +0100
+
+    Merge pull request #70 from diegorramos84/list_plant_form_styling
+    
+    added form styling and image
+
+[33mcommit c4cba3639b24f240f8c59b7f7ed4f301745eef8d[m
+Merge: dcd09d4 7641a36
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Fri Jun 10 12:43:16 2022 +0100
+
+    Merge branch 'main' into list_plant_form_styling
+
+[33mcommit dcd09d476c2fec2c48000ffbea535c00ab98baf9[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Fri Jun 10 12:40:41 2022 +0100
+
+    added form styling and image
+
+[33mcommit 7641a364c9f7bba214258c246a3bb16dc36e3ae2[m
+Merge: cafd6ae a664685
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Fri Jun 10 12:40:32 2022 +0100
+
+    Merge pull request #69 from diegorramos84/hide-order-button
+    
+    Can only choose from 1 in dropdown
+
+[33mcommit a6646859b585b288231a62cfd99fca0e41fc177a[m[33m ([m[1;31morigin/hide-order-button[m[33m, [m[1;32mhide-order-button[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Fri Jun 10 12:40:04 2022 +0100
+
+    Can only choose from 1 in dropdown
+
+[33mcommit cafd6ae321ad3478759075bb08f2a35395519471[m
+Merge: a606d47 fef66e8
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Fri Jun 10 12:24:30 2022 +0100
+
+    Merge pull request #68 from diegorramos84/add-image-if-statement
+    
+    Update if image statement
+
+[33mcommit fef66e88c9c09ef9ba475a4d5cb69683a83313b0[m
+Merge: 5037695 a606d47
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Fri Jun 10 12:24:20 2022 +0100
+
+    Merge branch 'main' into add-image-if-statement
+
+[33mcommit 50376958f1061e5b5e0b967da3467ffac891c28c[m[33m ([m[1;31morigin/add-image-if-statement[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Fri Jun 10 12:21:15 2022 +0100
+
+    Update if image statement
+
+[33mcommit a606d47c2ac462a38a1ed0f60132cc43d074f8c9[m
+Merge: 7d194b1 a5605cb
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Fri Jun 10 11:56:34 2022 +0100
+
+    Merge pull request #67 from diegorramos84/add_buttons_to_landing
+    
+    removed search bar and added buttons to landing page
+
+[33mcommit a5605cbc8d6c55977c10fc7d35671605452e4507[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Fri Jun 10 11:55:47 2022 +0100
+
+    removed search bar and added buttons to landing page
+
+[33mcommit 7d194b12eaae70e07be8dfa795410a634fd0cfbf[m
+Merge: abaff02 c49a1a8
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Fri Jun 10 11:39:03 2022 +0100
+
+    Merge pull request #66 from diegorramos84/update-my-bookings-index
+    
+    Updating image upload in form
+
+[33mcommit c49a1a89bdc813ec21fb67b49377f9c29d726d7a[m
+Merge: 15fc92d abaff02
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Fri Jun 10 11:38:53 2022 +0100
+
+    Merge branch 'main' into update-my-bookings-index
+
+[33mcommit 15fc92dadef44c765904c767e290da4ba6a98a04[m[33m ([m[1;31morigin/update-my-bookings-index[m[33m, [m[1;32mupdate-my-bookings-index[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Fri Jun 10 11:32:00 2022 +0100
+
+    Updating image upload in form
+
+[33mcommit abaff02af54c88af12e4e8488410fe2567655787[m
+Merge: d5872e7 76b4586
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Thu Jun 9 17:27:52 2022 +0100
+
+    Merge pull request #64 from diegorramos84/heroku-cloud
+    
+    adding cloud to heroku
+
+[33mcommit 76b45861a9b0baa936701eb9f9867482dc1cfd99[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Thu Jun 9 17:27:13 2022 +0100
+
+    adding cloud to heroku
+
+[33mcommit d5872e7ddc785061dd60290a09916bd16ba6233f[m
+Merge: c371da3 bf39469
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Thu Jun 9 16:54:14 2022 +0100
+
+    Merge pull request #61 from diegorramos84/add_btns_to_pages
+    
+    Add btns to pages
+
+[33mcommit bf3946908a0172e0bde46392985f95ffea8f564c[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Thu Jun 9 16:53:43 2022 +0100
+
+    added buttons, made a label for plant and confirm order pages
+
+[33mcommit c371da3e4c55d321749c74cebac45f7150cb58fc[m
+Merge: 7f6dc56 b86f3ce
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Thu Jun 9 15:47:18 2022 +0100
+
+    Merge pull request #60 from diegorramos84/update-my-bookings-index
+    
+    Updated image in cards
+
+[33mcommit b86f3ceb49273ebbd9fc698b50873f3e338e759e[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Thu Jun 9 15:46:41 2022 +0100
+
+    Updated image in cards
+
+[33mcommit 7f6dc56b9fd1c0568eb57c815cb7a1825627af71[m
+Merge: ecff572 7f78a07
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Thu Jun 9 15:36:34 2022 +0100
+
+    Merge pull request #59 from diegorramos84/update-my-bookings
+    
+    Update my bookings
+
+[33mcommit 7f78a07d5ebb0ec8aed787eef97c5f1faeb788b0[m[33m ([m[1;31morigin/update-my-bookings[m[33m, [m[1;32mupdate-my-bookings[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Thu Jun 9 15:35:37 2022 +0100
+
+    Updated the bookings controller
+
+[33mcommit 981d28ed46ff64dfdd9b565e056ede40633009cf[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Thu Jun 9 14:18:57 2022 +0100
+
+    added styling to pages
+
+[33mcommit ecff572fb6edcbc98268abb93e2248ce2ab708b1[m
+Merge: 47a04ae 6fcfce8
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Thu Jun 9 14:12:29 2022 +0100
+
+    Merge pull request #57 from diegorramos84/plant-show-updates
+    
+    moved the map to the right and made it stick
+
+[33mcommit 6fcfce87d65d0142b73f77affe0c6745eb53894d[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Thu Jun 9 14:10:48 2022 +0100
+
+    moved the map to the right and made it stick
+
+[33mcommit 47a04aebbfda9ffab62bb692ac2721f019262fda[m
+Merge: db7b021 777925d
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Thu Jun 9 12:39:55 2022 +0100
+
+    Merge pull request #56 from diegorramos84/plant-map
+    
+    Plant map
+
+[33mcommit 777925d44272c8a32c2825057bbfd3375d5981c3[m
+Merge: 0e80ad8 db7b021
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Thu Jun 9 12:32:45 2022 +0100
+
+    Merge branch 'main' into plant-map
+
+[33mcommit 0e80ad84b48baa82c75509fb6b672b97f17cff86[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Thu Jun 9 12:28:01 2022 +0100
+
+    added request booking button and divs for styling
+
+[33mcommit db7b0211424456fa564052f8a0c29bc5997b2607[m
+Merge: 0ff89cd c466905
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Thu Jun 9 11:55:27 2022 +0100
+
+    Merge pull request #55 from diegorramos84/add_sarchbar_to_landing_page
+    
+    added search bar to landing page
+
+[33mcommit c466905423e34c9636911066be37c9d303e50962[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Thu Jun 9 11:54:58 2022 +0100
+
+    added search bar to landing page
+
+[33mcommit 2c9a757e28baeecbacec016ad5c37240d1435e8c[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Thu Jun 9 11:46:20 2022 +0100
+
+    added map to plant show page
+
+[33mcommit 0ff89cd794061598ff71f5b303bdcfd9a6c2f37f[m
+Merge: 3b5e972 7e94fd8
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Thu Jun 9 11:00:29 2022 +0100
+
+    Merge pull request #54 from diegorramos84/create_card
+    
+    made the basic cards
+
+[33mcommit 7e94fd82891e8cc616fc9d0286e67413595c15b9[m
+Merge: 9c68eba 3b5e972
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Thu Jun 9 11:00:21 2022 +0100
+
+    Merge branch 'main' into create_card
+
+[33mcommit 9c68ebafefa444f5c16ec88bf80d98995f77f27f[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Thu Jun 9 10:56:57 2022 +0100
+
+    made thte basic cards
+
+[33mcommit 0824ff9e81346a95b5a01b2c6ede2c6311cae74d[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Wed Jun 8 17:29:43 2022 +0100
+
+    Updated plant quantity
+
+[33mcommit bd4dffde556d15ebb91e166d1a43e72191986869[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Wed Jun 8 17:25:21 2022 +0100
+
+    added geocode lat and lng
+
+[33mcommit 3b5e972cf3f8817ab592a723fbfabad09135d6f6[m
+Merge: 8183a14 a887e64
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 17:24:34 2022 +0100
+
+    Merge pull request #53 from diegorramos84/create-chat-feature
+    
+    Create chat feature
+
+[33mcommit a887e640aaa3c4075103db9c605317af1c4a17c7[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 17:23:32 2022 +0100
+
+    added basic chat - need tuning
+
+[33mcommit 8183a14ab5a9c29a46a81b4237bcb39bcdda67d2[m
+Merge: 3cd8e8c 0ea2284
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Wed Jun 8 17:20:43 2022 +0100
+
+    Merge pull request #52 from diegorramos84/update-my-bookings
+    
+    Updated application controller
+
+[33mcommit 0ea2284ab0db8aa7a6b0455e6177690765c98cf5[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Wed Jun 8 17:19:35 2022 +0100
+
+    Updated application controller
+
+[33mcommit 2a13ec7b6f66330a9bbe2210080034dc1e7df975[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 16:34:10 2022 +0100
+
+    create chat model, added username to users, adjusted seed file
+
+[33mcommit 3cd8e8cd0fc818003c22924bedd35251b69a5268[m
+Merge: ef8d7db ea44301
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Wed Jun 8 16:23:45 2022 +0100
+
+    Merge pull request #48 from diegorramos84/update-bookings-index
+    
+    Updated user forms
+
+[33mcommit ea44301da4acd4f2a89a0fc130ea58b259d8495d[m[33m ([m[1;31morigin/update-bookings-index[m[33m, [m[1;32mupdate-bookings-index[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Wed Jun 8 16:21:15 2022 +0100
+
+    Updated user forms
+
+[33mcommit ef8d7db2edf2cf1c5c0714216337b3af11d18953[m
+Merge: 3e96db2 af0f23e
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Wed Jun 8 16:08:16 2022 +0100
+
+    Merge pull request #46 from diegorramos84/reviews-changesv2
+    
+    Reviews changesv2
+
+[33mcommit af0f23ee1648f1c1222fb1bcd187ad2f8d30853c[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Wed Jun 8 16:05:02 2022 +0100
+
+    changed reviews controller after schema change
+
+[33mcommit 3e96db2112c89e4c069dc08fb9aefb4256694620[m
+Merge: 02cae66 1c66c48
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 15:54:18 2022 +0100
+
+    Merge pull request #45 from diegorramos84/add-search-feature
+    
+    working search bar in index page - using pg_search
+
+[33mcommit 1c66c489e8e46146e8dd871c3158183228004d0d[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 15:52:40 2022 +0100
+
+    working search bar in index page - using pg_search
+
+[33mcommit 02cae66168b294fb54f9af7d34e2a8e559c25f14[m
+Merge: 9ce03b0 d569b01
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Wed Jun 8 15:19:31 2022 +0100
+
+    Merge pull request #44 from diegorramos84/resize_navbar_logo
+    
+    resized and rearranged logo. updated icons and buttons
+
+[33mcommit d569b013c88b0ea4c0583909a8bb5ad1e6fc9609[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Wed Jun 8 15:18:48 2022 +0100
+
+    resized and rearranged logo. updated icons and buttons
+
+[33mcommit 9ce03b048223a3ff154396b5a0251c9f41041f12[m
+Merge: f56a471 980ac0b
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Wed Jun 8 15:09:34 2022 +0100
+
+    Merge pull request #43 from diegorramos84/users-with-bookings-index
+    
+    Updated user controller
+
+[33mcommit 980ac0b955fef7d47a2939706b212f55295853d2[m[33m ([m[1;31morigin/users-with-bookings-index[m[33m, [m[1;32musers-with-bookings-index[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Wed Jun 8 15:08:39 2022 +0100
+
+    Updated user controller
+
+[33mcommit a58934fe59f0765ac17c86230d17b7d6cbf1f4dd[m
+Merge: eae10cb f56a471
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Wed Jun 8 14:54:03 2022 +0100
+
+    Merge branch 'main' into reviews-changesv2
+
+[33mcommit eae10cb006082319f0a985659dcde0750d8ea5dc[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Wed Jun 8 14:53:06 2022 +0100
+
+    changes show method in users controller
+
+[33mcommit f56a4717b4cc316eb0461083c87a765a0b2c7903[m
+Merge: 1aef216 1b9c2e2
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Wed Jun 8 14:49:50 2022 +0100
+
+    Merge pull request #42 from diegorramos84/resized_logo
+    
+    resized and rearranged logo  description
+
+[33mcommit 1b9c2e27d937c941e5b34e190612ee2bd2ba880c[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Wed Jun 8 14:48:58 2022 +0100
+
+    resized and rearranged logo  description
+
+[33mcommit 1aef2169fa878f5cb855f28ac73eccf452d4a2e5[m
+Merge: 4811c6a 98d2b79
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Wed Jun 8 14:39:35 2022 +0100
+
+    Merge pull request #41 from diegorramos84/modify-branches
+    
+    Modify branches
+
+[33mcommit 98d2b79f989033a5611056144ad045d47107114d[m
+Merge: 74bc971 4811c6a
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Wed Jun 8 14:39:28 2022 +0100
+
+    Merge branch 'main' into modify-branches
+
+[33mcommit 74bc971e2f9e5b16837a309afab819a77fa7a7b4[m[33m ([m[1;31morigin/modify-branches[m[33m, [m[1;32mmodify-branches[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Wed Jun 8 14:37:06 2022 +0100
+
+    Updated bookings controller and index page
+
+[33mcommit 4811c6a4e4ed5d0eae4e0fba9898b4855bd670dc[m
+Merge: eba1278 21a6d9c
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Wed Jun 8 14:22:16 2022 +0100
+
+    Merge pull request #40 from diegorramos84/all_pages_background_colour
+    
+    added background colour
+
+[33mcommit 21a6d9c8ed11cb22069dedab2eb11e5c077032b8[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Wed Jun 8 14:21:34 2022 +0100
+
+    added background colour
+
+[33mcommit eba1278107e3be182811e6b1467903fae0a7440b[m
+Merge: cfd0913 7d37fe3
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Wed Jun 8 12:54:53 2022 +0100
+
+    Merge pull request #39 from diegorramos84/navbar_btns
+    
+    coloured nav buttons and added margin between
+
+[33mcommit 7d37fe3e43af77af9b5570d937979a3ea4f2dc5e[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Wed Jun 8 12:54:20 2022 +0100
+
+    coloured nav buttonds and added margin between
+
+[33mcommit cfd09139157fad2ae66fcc0432b42890392be825[m
+Merge: 948383a ed78919
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 12:52:19 2022 +0100
+
+    Merge pull request #38 from diegorramos84/add-reviews-to-seedfile
+    
+    add review  and user pic to seed file
+
+[33mcommit ed78919320dcb2e1d9c837ca5465c5cf8a8c87b3[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 12:51:21 2022 +0100
+
+    add review to seed file
+
+[33mcommit 948383aa1c86640ecc7bcd44e41d2bbfbfb09d80[m
+Merge: 4abac40 da6c47e
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Wed Jun 8 12:24:58 2022 +0100
+
+    Merge pull request #36 from diegorramos84/review-changes
+    
+    permitted rating so it's visible and limited rating to 5 on form
+
+[33mcommit 4abac403e444a89e40802fe5bf70873a466554f0[m
+Merge: 2605ea9 7d7c934
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 12:24:19 2022 +0100
+
+    Merge pull request #35 from diegorramos84/change-reviews-migration
+    
+    change review association
+
+[33mcommit da6c47ee53bef0d00b17b03e80bd8a1b8799a8b7[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Wed Jun 8 12:23:55 2022 +0100
+
+    permitted rating so it's visible and limited rating to 5 on form
+
+[33mcommit 7d7c934cfeb2572e360e4c9e467ef9870bef8a74[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 12:23:47 2022 +0100
+
+    change review association
+
+[33mcommit 2605ea9fd2d8ff527ae034a1596c9e04837a59b9[m
+Merge: 08abcb1 da8fcd4
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Wed Jun 8 12:09:09 2022 +0100
+
+    Merge pull request #32 from diegorramos84/landing_description
+    
+    added landing page description
+
+[33mcommit da8fcd461c9bd4f88426f5d3080e0fd8979fec2e[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Wed Jun 8 12:08:34 2022 +0100
+
+    added landing page description
+
+[33mcommit 08abcb1f9db595f75442c38680b2d95b9f42450c[m
+Merge: 3ae2e47 1913148
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 11:29:52 2022 +0100
+
+    Merge pull request #30 from diegorramos84/adding-reviews-to-seed
+    
+    add bookings to seed file
+
+[33mcommit 1913148a94bb45191ab8b16710937ef8928f6e95[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Wed Jun 8 11:28:44 2022 +0100
+
+    add bookings to seed file
+
+[33mcommit 3ae2e478b975381b512f16f0491af04ae97a38f4[m
+Merge: c8baf88 a4b64b3
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Wed Jun 8 11:20:25 2022 +0100
+
+    Merge pull request #28 from diegorramos84/reviews-controller
+    
+    Reviews controller
+
+[33mcommit a4b64b3b4e840d920130aa3543543dbf0ef15988[m
+Merge: c1b793a c8baf88
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Wed Jun 8 11:20:15 2022 +0100
+
+    Merge branch 'main' into reviews-controller
+
+[33mcommit c8baf8889209d9e8b7f7db44429c24bce2db7455[m
+Merge: 3ed2c3a cc7d222
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Wed Jun 8 11:18:34 2022 +0100
+
+    Merge pull request #29 from diegorramos84/create_btn
+    
+    Create btn
+
+[33mcommit cc7d2227a5ebf180ba6e27742b24a88aaa3480bd[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Wed Jun 8 11:17:48 2022 +0100
+
+    changed class name
+
+[33mcommit 79cbb76b2aee8d97226234a57aacf2818e32d2d7[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Wed Jun 8 11:16:05 2022 +0100
+
+    gave the buttons css
+
+[33mcommit c1b793a4c6ccacc315e97dad207b45bd38ebbdf3[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Wed Jun 8 11:11:16 2022 +0100
+
+    added a reviews controller and methods
+
+[33mcommit 00d160001061c18c0f356c7e0328ccd8a3b5e68a[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Tue Jun 7 20:47:37 2022 +0100
+
+    added users controller and views and routes
+
+[33mcommit 3ed2c3ac3fc249ac1c466c7b4709a76ec92dd4c1[m
+Merge: 94e4e1b 5cad192
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Tue Jun 7 17:37:14 2022 +0100
+
+    Merge pull request #26 from diegorramos84/login_page_card
+    
+    cleaned up log in page
+
+[33mcommit 5cad1923bba71d704f9dabadccf12cd7e5b9b74e[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Tue Jun 7 17:36:44 2022 +0100
+
+    cleaned up log in page
+
+[33mcommit 94e4e1bde8bf80f942c5c1699ef839864741353a[m
+Merge: c19c7ec cf61e8a
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 17:30:52 2022 +0100
+
+    Merge pull request #25 from diegorramos84/whitepages-devise
+    
+    added plants index and show to devise whitepages
+
+[33mcommit cf61e8a044ccdd62484222cb3d671d7ce9a0c043[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 17:29:32 2022 +0100
+
+    added plants index and show to devise whitepages
+
+[33mcommit c19c7ec80fe8d50998d86ee59d2d88cf742df8fe[m
+Merge: 0dadb20 f8e65ce
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Tue Jun 7 17:21:43 2022 +0100
+
+    Merge pull request #23 from diegorramos84/navbar
+    
+    added icons to navbar
+
+[33mcommit f8e65cedb63c307de8879b411552404769d9d0b9[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Tue Jun 7 17:21:03 2022 +0100
+
+    added icons to navbar
+
+[33mcommit 3f42a4469060b44d58cab428684abf3e414932ab[m
+Merge: 75819ec 0dadb20
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Tue Jun 7 17:20:23 2022 +0100
+
+    Updated merges
+
+[33mcommit 0dadb208abbd5ab26121c6da41f6bb09b1f345de[m
+Merge: 841c4b1 82de501
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Tue Jun 7 17:09:36 2022 +0100
+
+    Merge pull request #22 from diegorramos84/booking-controller
+    
+    Updated booking controller
+
+[33mcommit 82de501eaf4fbbb1bd7588aa4e41467fe3c158f8[m
+Merge: 1ea86b7 841c4b1
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Tue Jun 7 17:09:25 2022 +0100
+
+    Merge branch 'main' into booking-controller
+
+[33mcommit 1ea86b721e14736a2c152a965676d35012316def[m[33m ([m[1;31morigin/booking-controller[m[33m, [m[1;32mbooking-controller[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Tue Jun 7 17:07:05 2022 +0100
+
+    Updated booking controller
+
+[33mcommit 841c4b12cb88cf3bb01a01d307dcb5c73736028f[m
+Merge: 355ef7c c627983
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Tue Jun 7 16:48:46 2022 +0100
+
+    Merge pull request #19 from diegorramos84/creating_landing_navbar
+    
+    added nav bar, added landing page background image, added logo to lan…
+
+[33mcommit c627983d589d37172c0f22b16a778dcfcea7a05c[m
+Merge: 7e92035 355ef7c
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Tue Jun 7 16:48:38 2022 +0100
+
+    Merge branch 'main' into creating_landing_navbar
+
+[33mcommit 355ef7c1d97d6824a88510ff138544401671722b[m
+Merge: 075f513 8520b17
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 16:43:09 2022 +0100
+
+    Merge pull request #21 from diegorramos84/seed-w-pics
+    
+    seed w/ pictures
+
+[33mcommit 8520b170c0b4d045275d7e762f83c6b02d676c41[m
+Merge: 3d8f5a7 075f513
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 16:43:00 2022 +0100
+
+    Merge branch 'main' into seed-w-pics
+
+[33mcommit 3d8f5a7ac66fc44155b566c92e5a12b666d3bdb2[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 16:41:11 2022 +0100
+
+    seed w/ pictures
+
+[33mcommit 075f51340d02005fcf018b2c8cb7a9d9c9f2d8ee[m
+Merge: 51d5170 22b1da3
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Tue Jun 7 16:33:55 2022 +0100
+
+    Merge pull request #20 from diegorramos84/create_footer
+    
+    Create footer
+
+[33mcommit 22b1da32a91708d2c79c4291dbb7bfb38797532c[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Tue Jun 7 16:33:03 2022 +0100
+
+    created footer
+
+[33mcommit 4d2beb6834e7adf708e8cf2b294bbb840f6427e9[m
+Merge: c1b8c9a 51d5170
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Tue Jun 7 16:10:31 2022 +0100
+
+    merging
+
+[33mcommit 7e920351746edb39f6a7512577124aca73b6caeb[m
+Merge: c1b8c9a 51d5170
+Author: Morton Nicolaysen <102061854+MNicolaysen@users.noreply.github.com>
+Date:   Tue Jun 7 16:08:30 2022 +0100
+
+    Merge branch 'main' into creating_landing_navbar
+
+[33mcommit c1b8c9a3333f9207101b66a6e004ead96a9cf09c[m
+Author: Morton Nicolaysen <mort1995@hotmail.com>
+Date:   Tue Jun 7 16:06:16 2022 +0100
+
+    added nav bar, added landing page background image, added logo to landing page
+
+[33mcommit 51d5170b9e530f6492e5aa43aaffa10a5e34bcdd[m
+Merge: b7629d3 d96a22b
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Tue Jun 7 15:28:00 2022 +0100
+
+    Merge pull request #18 from diegorramos84/update-plant-views
+    
+    updated views
+
+[33mcommit d96a22b0183fce827c5317bca2febfe34c41ab47[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Tue Jun 7 15:21:11 2022 +0100
+
+    added edit and delete links
+
+[33mcommit b7629d357581bb5d38c86205f6be895c6f2a8dd1[m
+Merge: 7fc6575 75f9317
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 15:18:38 2022 +0100
+
+    Merge pull request #17 from diegorramos84/cloud
+    
+    cloud integration
+
+[33mcommit 75f93170e06f36450c0ad5a7d12a7e36fe2f89ac[m
+Merge: cb2122d 7fc6575
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 15:18:26 2022 +0100
+
+    Merge branch 'main' into cloud
+
+[33mcommit cb2122db2098e5923ceab5f090cb5b19a45a6b8c[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 15:12:04 2022 +0100
+
+    cloud integration
+
+[33mcommit 75819ec42cfb77db64c78eebbf79d08689bb1718[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Tue Jun 7 14:42:30 2022 +0100
+
+    Adding schema
+
+[33mcommit 7fc6575e51fc1043a6b098a34bf5a0c8c66f7c2f[m
+Merge: a112f8b 3aefdcd
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Tue Jun 7 14:07:14 2022 +0100
+
+    Merge pull request #13 from diegorramos84/plants-controller
+    
+    Plants controller
+
+[33mcommit a112f8bdf551607b0f8b8e448930a91f58148649[m
+Merge: 809368b 93c4cee
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 14:06:41 2022 +0100
+
+    Merge pull request #12 from diegorramos84/seed_improve
+    
+    Seed improve
+
+[33mcommit 3aefdcd840d0a7693977fe8b75ba3d4f4261090d[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Tue Jun 7 14:06:01 2022 +0100
+
+    added views for plants controller methods
+
+[33mcommit 93c4ceef5cda2d78f70b039767ae8b52e9756a0f[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 14:05:43 2022 +0100
+
+    working seed file
+
+[33mcommit 5f677d54cc6e3a48b409d2ab285bf0a00d1c4b59[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 13:55:25 2022 +0100
+
+    fixing seed file
+
+[33mcommit 809368b31e507b7f0cfc870064678b37f972814a[m
+Merge: 5ed0247 21d7dbe
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 13:02:40 2022 +0100
+
+    Merge pull request #11 from diegorramos84/seed_file
+    
+    Seed file
+
+[33mcommit 21d7dbeac0aea7e5031d9cd97666da4f9f39fe47[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 12:59:07 2022 +0100
+
+    preliminary seed file
+
+[33mcommit 0ac1054dca9fc714af3710001880c869a19089b2[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Tue Jun 7 12:56:23 2022 +0100
+
+    preliminary seed file
+
+[33mcommit 1f43f8c9fbcef4f6480d2b85ebbc894c7908bf88[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Tue Jun 7 12:36:24 2022 +0100
+
+    added methods to plants controller
+
+[33mcommit 160306e66783813085f79a9ae393817a02568da0[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Tue Jun 7 12:06:12 2022 +0100
+
+    added associations to models
+
+[33mcommit 5ed0247852aa21c380888ae6d2a325be2b21e3b3[m
+Merge: b647ebb bdbd390
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Tue Jun 7 11:41:50 2022 +0100
+
+    Merge pull request #10 from diegorramos84/create-bookings-model
+    
+    Created bookings model
+
+[33mcommit bdbd3903e877a479d7cd52e16a099e3415c9b2e3[m
+Merge: 96a0f34 b647ebb
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Tue Jun 7 11:41:34 2022 +0100
+
+    Merge branch 'main' into create-bookings-model
+
+[33mcommit 96a0f3400c11207485c4e43795a764ba5056b465[m[33m ([m[1;31morigin/create-bookings-model[m[33m, [m[1;32mcreate-bookings-model[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Tue Jun 7 11:37:09 2022 +0100
+
+    Created bookings model
+
+[33mcommit b647ebb75f13d018a52640d5ac727ac1801a3846[m
+Merge: 86d180b 11d8227
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Tue Jun 7 11:36:21 2022 +0100
+
+    Merge pull request #9 from diegorramos84/create-reviews-model
+    
+    added review model
+
+[33mcommit 11d8227a34e7b7e817244f923e1ecf8b80f41f4c[m
+Merge: c0c331b 86d180b
+Author: sarshad1986 <101324502+sarshad1986@users.noreply.github.com>
+Date:   Tue Jun 7 11:35:57 2022 +0100
+
+    Merge branch 'main' into create-reviews-model
+
+[33mcommit c0c331bf4a7f728dcbc065df2ca7f3ed1cdfa616[m
+Author: Sarah Arshad <sarshad1@yahoo.co.uk>
+Date:   Tue Jun 7 11:31:38 2022 +0100
+
+    added review model
+
+[33mcommit 86d180bdb7df2e4269b4e42b277a19e596fcf00f[m
+Merge: 6aa0e12 f6bd6f7
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Tue Jun 7 11:24:43 2022 +0100
+
+    Merge pull request #8 from diegorramos84/create-plant-model
+    
+    Created plant model
+
+[33mcommit f6bd6f7059daa540b5ebda5ba034942ba9a11f95[m[33m ([m[1;31morigin/create-plant-model[m[33m, [m[1;32mcreate-plant-model[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Tue Jun 7 11:24:07 2022 +0100
+
+    Created plant model
+
+[33mcommit 6aa0e123ad606751085f6552a386e43a3e4a10c5[m
+Merge: 74b8518 a73d254
+Author: Stephanie Wood <33357054+StephW86@users.noreply.github.com>
+Date:   Tue Jun 7 11:09:48 2022 +0100
+
+    Merge pull request #7 from diegorramos84/create-user-model
+    
+    Created users model
+
+[33mcommit a73d254ee48c00f76ba7056d87ac4afcb3a2d429[m[33m ([m[1;31morigin/create-user-model[m[33m, [m[1;32mcreate-user-model[m[33m)[m
+Author: Stephanie Wood <stephwood10@hotmail.com>
+Date:   Tue Jun 7 11:08:53 2022 +0100
+
+    Created users model
+
+[33mcommit 74b851864a107eea8391174c9854af24abc5d1d4[m
+Author: Diego Ramos <diegorramos84@gmail.com>
+Date:   Mon Jun 6 17:22:02 2022 +0100
+
+    Initial commit with devise template from https://github.com/lewagon/rails-templates
