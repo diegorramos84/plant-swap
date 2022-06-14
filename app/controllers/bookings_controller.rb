@@ -12,7 +12,7 @@ class BookingsController < ApplicationController
     @booking.plant_id = @plant.id
     @booking.user_id = @user.id
     if @booking.save!
-      @chatroom = Chatroom.create(name: "#{@user.username} + #{@plant.user.username}", booking_id: @booking[:id])
+      @chatroom = Chatroom.create(name: "#{@user.first_name} + #{@plant.user.first_name}", booking_id: @booking[:id])
 	    redirect_to bookings_path(@plant)
     else
       render :new
