@@ -8,15 +8,9 @@
 .your-garden .card-grid {
   flex-grow: 1;
   display: flex;
-  grid-gap: 16px;
+  grid-gap: 32px;
   flex-wrap: wrap;
-  // justify-content: center;
-  // margin-top: 36px;
-  // flex-direction: row;
-}
-
-.profile-container {
-  // flex: 0;
+  justify-content: center;
 }
 
 .plant-card-garden:hover {

@@ -2,13 +2,20 @@
   <div class="row">
     <div class="profile-container col-4">
       <div class="profile">
-        <% if @user == current_user %>
-          <h1 class="text-center mb-5 mt-5"><i class="fa-solid fa-seedling"></i><%="Your profile"%> <i class="fa-solid fa-seedling"></i></h1>
-          <h3>Your Average Rating: <%= @user.average_rating %> </h3>
-        <% else %>
-          <h1><%= @user.first_name %>'s profile</h1>
-          <p>Rating: <%= @user.average_rating %></p>
-        <% end %>
+        <div class="profile-image d-flex justify-content-center">
+          <% if @user.photo.attached? %>
+              <%= cl_image_tag @user.photo.key %>
+            <% else %>
+              <%= image_tag("https://res.cloudinary.com/lardocelar/image/upload/v1654685294/user_placeholder_kbf1mr.png") %>
+          <% end %>
+        </div>
+          <% if @user == current_user %>
+            <h2 class="text-center mb-3 mt-3"><%="Your profile"%></h2>
+            <h3>Your Average Rating: <%= @user.average_rating %> </h3>
+          <% else %>
+            <h2 class="text-center mb-3 mt-3"><%= @user.first_name %>'s profile</h2>
+            <p>Rating: <%= @user.average_rating %></p>
+          <% end %>
       </div>
 
       <div class="reviews">
@@ -35,9 +42,9 @@
     <div class="your-garden col-8">
       <div class="your-garden-heading">
         <% if @user == current_user %>
-          <h1 class="text-center mb-5 mt-5"><i class="fa-solid fa-leaf"></i><i class="fa-solid fa-leaf"></i> Your garden <i class="fa-solid fa-leaf"></i><i class="fa-solid fa-leaf"></i></h1>
+          <h1 class="text-center mb-3 mt-n1">Your garden</i></h1>
         <% else %>
-          <h2><%= @user.first_name %>'s garden</h2>
+          <h1 class="text-center mb-3 mt-n1"><%= @user.first_name %>'s garden</i></h1>
         <% end %>
       </div>
       <div class="card-grid">
