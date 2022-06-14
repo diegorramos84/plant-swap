@@ -68,6 +68,10 @@
                     <% if booking.buy_status == "pending"%>
                       <%= link_to "Add a review", new_booking_review_path(booking), class: "pink-btn" %>
                     <% end %>
+                     <%# <% if booking.buy_status == "pending" %>
+                      <%# <% else booking.buy_status == "completed" %>
+                      <%# <%= link_to "Add a review", new_booking_review_path(booking), class: "pink-btn" %>
+                    <%# <% end %>
                   </div>
                   <div class="booking-user-action">
                     <% if booking.chatroom != nil%>
