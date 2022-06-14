@@ -1,24 +1,41 @@
 .navbar-pages {
-  height: 120px;
   display: flex;
   justify-content: space-evenly;
-  background-color: #1C5252;}
+  background-color: #fae1ce;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
 .navbar-pages .navbar-collapse {
   flex-grow: 0;
 }
 
 .navbar-pages .navbar-brand img {
-  width: 370px;
-  margin-left: 100px;
-  margin-top: 10px;
+  width: 60px;
 }
 
 .navbar-icons a {
-  color: #fba1a7;
+  color: black;
   margin-right: 12px;
 }
 
 .navbar-icons a:hover {
   opacity: 0.5;
+}
+
+.search-form-control  {
+  display: flex;
+  width: 350px;
+  height: 40px;
+}
+
+.search-form-control button {
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }

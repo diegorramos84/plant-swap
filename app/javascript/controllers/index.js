@@ -9,3 +9,6 @@ application.register("hello", HelloController)
 
 import MapController from "./map_controller.js"
 application.register("map", MapController)
+
+import StarRatingController from "./star_rating_controller.js"
+application.register("star-rating", StarRatingController)

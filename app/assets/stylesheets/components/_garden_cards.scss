@@ -7,13 +7,9 @@
 
 .your-garden .card-grid {
   flex-grow: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  padding: 10px;
-  // justify-content: center;
-  // margin-top: 36px;
-  // flex-direction: row;
+  display: flex;
+  grid-gap: 16px;
+  flex-wrap: wrap;
 }
 
 .plant-card-garden:hover {

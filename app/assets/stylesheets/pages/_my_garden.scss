@@ -18,15 +18,7 @@
   .fa-solid {
     font-size: 28px;
   }
-
-  // .h3-profile {
-    // text-align: center;
-  // }
 }
-
-// .h4-reviews {
-  // padding-left: 10px;
-// }
 
 .garden-plant-info .garder-user-actions {
   display: flex;
@@ -38,24 +30,32 @@
   }
 }
 
-// .profile-container {
-//   display: flex;
-// }
 
 .profile_image {
   width: 70px;
-  display: block;
-  // margin-left: auto;
-  // margin-right: auto;
+  // display: block;
   border-radius: 50%;
   text-align: center;
 }
 
-// .profile-text {
-  // display: flex;
-  // align-items: left;
-// }
 
 .first-name {
   padding-top: 8px;
+}
+
+.star-rating {
+  display: flex;
+  color: gold;
+  margin-bottom: 8px;
+}
+
+.review-card {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 16px;
+  margin-bottom: 16px;
+
+  & p:last-child {
+    margin-bottom: 0;
+  }
 }
