@@ -38,6 +38,11 @@
                 <% else booking.buy_status == 'rejected' %>
                   <p><strong>You rejected this booking</strong></p>
                 <% end %>
+                <% if booking.chatroom != nil%>
+                  <%= link_to "/bookings/#{booking.id}/chatrooms/#{booking.chatroom.id}" do %>
+                      <i class="fa-solid fa-message"></i>
+                  <% end %>
+                <% end %>
               </div>
             </div>
           </div>
@@ -64,8 +69,10 @@
                     <% end %>
                   </div>
                   <div class="booking-user-action">
-                    <%=link_to plants_path do %>
-                      <i class="fa-solid fa-message"></i>
+                    <% if booking.chatroom != nil%>
+                      <%= link_to "/bookings/#{booking.id}/chatrooms/#{booking.chatroom.id}" do %>
+                        <i class="fa-solid fa-message"></i>
+                      <% end %>
                     <% end %>
                     <%# <%=link_to plants_path do %>
                       <%# <i class="fa-solid fa-trash-can"></i> %>

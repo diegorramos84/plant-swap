@@ -12,6 +12,7 @@ class BookingsController < ApplicationController
     @booking.plant_id = @plant.id
     @booking.user_id = @user.id
     if @booking.save!
+      @chatroom = Chatroom.create(name: "#{@plant.common_name}-Swap Chat", booking_id: @booking[:id])
 	    redirect_to bookings_path(@plant)
     else
       render :new
@@ -25,7 +26,7 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:buy_status, :plant_id, :booking_quantity, :status, :format)
+    params.require(:booking).permit(:buy_status, :plant_id, :booking_quantity, :status, :format, :chatroom, :id)
   end
 
   def reply_buy
