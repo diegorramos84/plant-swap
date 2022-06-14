@@ -1,12 +1,21 @@
 .navbar-pages {
   display: flex;
   justify-content: space-evenly;
-  background-color: #fae1ce;
+  background-color: #ac6f19;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .navbar-pages .navbar-collapse {
   flex-grow: 0;
+}
+
+.dropdown-menu {
+ background-color: #bbca64;
+ border-radius: 6px;
+}
+
+.dropdown-item:hover {
+  background-color: #d2e374;
 }
 
 .navbar-pages .navbar-brand img {

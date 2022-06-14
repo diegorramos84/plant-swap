@@ -15,7 +15,7 @@
   outline: none;
   border-radius: 25px;
   transition: all .5s ease-in-out;
-  background-color: #FFB7BC;
+  background-color: #A9B95A;
   padding-right: 40px;
   color: black;
 }
@@ -39,6 +39,8 @@
   color: white;
   background-color:transparent;
   pointer-events: painted;
+  border-style: solid;
+  border-color: white;
 }
 .btn-search:focus ~ .input-search{
   width: 300px;
