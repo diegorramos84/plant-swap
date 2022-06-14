@@ -6,3 +6,56 @@
   display: flex;
   flex-direction: row
 }
+
+.your-garden {
+  padding-left: 16px
+}
+
+.profile-container {
+  background-color: #05cec0;
+  padding: 18px;
+
+  .fa-solid {
+    font-size: 28px;
+  }
+
+  // .h3-profile {
+    // text-align: center;
+  // }
+}
+
+// .h4-reviews {
+  // padding-left: 10px;
+// }
+
+.garden-plant-info .garder-user-actions {
+  display: flex;
+  justify-content: space-between;
+
+  .fa-solid {
+  text-decoration: none;
+  font-size: 15px;
+  }
+}
+
+// .profile-container {
+//   display: flex;
+// }
+
+.profile_image {
+  width: 70px;
+  display: block;
+  // margin-left: auto;
+  // margin-right: auto;
+  border-radius: 50%;
+  text-align: center;
+}
+
+// .profile-text {
+  // display: flex;
+  // align-items: left;
+// }
+
+.first-name {
+  padding-top: 8px;
+}
