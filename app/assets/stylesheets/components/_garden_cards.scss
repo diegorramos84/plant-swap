@@ -23,8 +23,8 @@
 
 .user-profile-icon {
   color: #fcabb0;
-}
 
-.user-profile-icon:hover {
-  color: #fdd4d7;
+  &:hover {
+    color: #fdd4d7;
+  }
 }

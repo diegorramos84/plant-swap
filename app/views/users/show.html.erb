@@ -30,8 +30,8 @@
                   <% end %>
                   </p>
                 </div>
-                <p><%= booking.review.content %></p>
-                <p>reviewed by <%= booking.user.username %></p>
+                <p><%= booking.user.first_name %>: <em>"<%= booking.review.content %>"</em></p>
+                <%# <p>Reviewed by <%= booking.user.first_name</p> %>
               </div>
             <% end %>
           <% end %>
@@ -61,17 +61,17 @@
               <p><strong>Plant name: </strong><%= plant.common_name %></p>
               <p><strong>Plant type: </strong><%= plant.plant_type %></p>
               <p><strong>Amount of plants left: </strong><%= plant.quantity%></p>
-              <div class="garder-user-actions">
+              <div class="garden-user-actions">
                 <% if plant.user == current_user %>
                   <%= link_to edit_plant_path(plant) do %>
-                  <div class="user-profile-icon">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </div>
+                    <div class="user-profile-icon">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
                   <% end %>
                   <%= link_to plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
-                  <div class="user-profile-icon">
-                    <i class="fa-solid fa-trash-can"></i>
-                  </div>
+                    <div class="user-profile-icon">
+                      <i class="fa-solid fa-trash-can"></i>
+                    </div>
                   <% end %>
                 <% end %>
               </div>
