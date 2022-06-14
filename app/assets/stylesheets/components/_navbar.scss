@@ -1,8 +1,9 @@
 .navbar-pages {
   display: flex;
   justify-content: space-evenly;
-  background-color: #ac6f19;
+  background-color: #fcd5b7;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  height: 68px;
 }
 
 .navbar-pages .navbar-collapse {
@@ -10,18 +11,18 @@
 }
 
 .dropdown-menu {
- background-color: #bbca64;
+ background-color: #fecbcf;
  border-radius: 6px;
 }
 
 .dropdown-item:hover {
-  background-color: #d2e374;
+  background-color: #ee9ca1;
 }
 
 .navbar-pages .navbar-brand img {
-  width: 60px;
-  margin-top: 10px;
-  margin-right: 30px;
+  width: 50px;
+  margin-top: 6px;
+  margin-right: 10px;
 }
 
 .navbar-icons a {
