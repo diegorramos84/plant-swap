@@ -6,20 +6,20 @@
       <p><strong>Category:</strong> <%= @plant.category %></p>
       <p><strong>Plant type:</strong> <%= @plant.plant_type %></p>
       <p><strong>Description:</strong> <%= @plant.description %></p>
-      <p><strong>Botanical name:</strong> <%= @plant.botanical_name %></p>
-      <p><strong>Common name:</strong>  <%= @plant.common_name %></p>
-      <p><strong>Light conditions:</strong> <%= @plant.light_conditions %></p>
-      <p><strong>Mature height:</strong> <%= @plant.mature_height %>cm</p>
-      <p><strong>Quantity:</strong> <%= @plant.quantity %></p>
       <% if @plant.indoor %>
         <p>This is an indoor plant</p>
       <% else %>
         <p>This is an outdoor plant</p>
       <% end %>
+      <p><strong>Botanical name:</strong> <%= @plant.botanical_name %></p>
+      <p><strong>Common name:</strong>  <%= @plant.common_name %></p>
+      <p><strong>Light conditions:</strong> <%= @plant.light_conditions %></p>
+      <p><strong>Mature height:</strong> <%= @plant.mature_height %>cm</p>
+      <p><strong>Quantity:</strong> <%= @plant.quantity %></p>
     </div>
     <div class="quantity-dropdown">
       <%= simple_form_for [@plant, @booking] do |f| %>
-        <%= f.input :booking_quantity, collection: 0..@plant.quantity, include_blank: false %>
+        <%= f.input :booking_quantity, collection: 1..@plant.quantity, include_blank: false %>
         <%= f.button :submit, class: "pink-btn" %>
       <% end %>
     </div>

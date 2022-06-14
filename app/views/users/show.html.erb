@@ -11,11 +11,12 @@
         </div>
           <% if @user == current_user %>
             <h2 class="text-center mb-3 mt-3"><%="Your profile"%></h2>
-            <h3>Your Average Rating: <%= @user.average_rating %> </h3>
           <% else %>
             <h2 class="text-center mb-3 mt-3"><%= @user.first_name %>'s profile</h2>
-            <p>Rating: <%= @user.average_rating %></p>
           <% end %>
+          <p class="text-center"><% @user.average_rating.to_i.times do %>
+            <i class="fa-solid fa-star"></i>
+          <% end %></p>
       </div>
 
       <div class="reviews">
