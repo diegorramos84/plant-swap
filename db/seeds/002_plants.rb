@@ -21,7 +21,7 @@ photo = URI.open(url)
 @plant2 = Plant.create!(
   user_id: @user2[:id],
   category: "Clipping",
-  plant_type: "Hanging & climbing",
+  plant_type: "Climbers",
   botanical_name: "Epipremnum aureum",
   common_name: "Devil’s ivy",
   description: "it's one of the most popular houseplants in the world. There are two reasons for that. 1) It's extremely
@@ -79,7 +79,7 @@ photo = URI.open(url)
 @plant5 = Plant.create!(
   user_id: @user5[:id],
   category: "Clipping",
-  plant_type: "Hanging & climbing",
+  plant_type: "Climbers",
   botanical_name: "Scindapsus pictus",
   common_name: "Satin pothos",
   description: "Really easy to grow. Keep it warm and don't overwater it. It prefers bright, indirect light.",
