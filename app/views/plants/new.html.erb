@@ -4,7 +4,8 @@
   <div class="listing-card">
     <h1>List your plant</h1>
     <br>
-
+    
+    <div class="list-form">
     <%= simple_form_for @plant do |f| %>
       <%= f.input :photo, as: :file %>
       <%= f.input :category, collection: ["Plant", "Plantlet", "Clipping"] %>

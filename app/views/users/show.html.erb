@@ -1,4 +1,8 @@
 <div class="container-xxl mt-4">
+    <form>
+      <input type="button" value="Back" onclick="history.back()" class="pink-btn">
+    </form>
+  <br>
   <div class="row">
     <div class="col-4">
     <div class="profile-container">
@@ -32,8 +36,8 @@
                   <% end %>
                   </p>
                 </div>
-                <p><%= booking.review.content %></p>
-                <p>reviewed by <%= booking.user.username %></p>
+                <p><%= booking.user.first_name %>: <em>"<%= booking.review.content %>"</em></p>
+                <%# <p>Reviewed by <%= booking.user.first_name</p> %>
               </div>
             <% end %>
           <% end %>
@@ -56,7 +60,7 @@
             <%= link_to plant_path(plant) do %>
               <div class="plant-garden-picture">
                 <% if plant.photo.attached? %>
-                  <%= cl_image_tag plant.photo.key, height: 250, width: 300 %>
+                  <%= cl_image_tag plant.photo.key, height: 250, width: 250 %>
                 <% end %>
               </div>
             <% end %>
@@ -64,13 +68,17 @@
               <p><strong>Plant name: </strong><%= plant.common_name %></p>
               <p><strong>Plant type: </strong><%= plant.plant_type %></p>
               <p><strong>Amount of plants left: </strong><%= plant.quantity%></p>
-              <div class="garder-user-actions">
+              <div class="garden-user-actions">
                 <% if plant.user == current_user %>
                   <%= link_to edit_plant_path(plant) do %>
-                    <i class="fa-solid fa-pen-to-square"></i>
+                    <div class="user-profile-icon">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
                   <% end %>
                   <%= link_to plant_path(plant), data: {turbo_method: :delete, controller: "sweet-alert", action: "click->sweet-alert#open", sweet_alert_plant_value: "#{plant.id}"} do %>
-                    <i class="fa-solid fa-trash-can"></i>
+                    <div class="user-profile-icon">
+                      <i class="fa-solid fa-trash-can"></i>
+                    </div>
                   <% end %>
                 <% end %>
               </div>
