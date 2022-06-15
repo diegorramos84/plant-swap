@@ -10,7 +10,7 @@ require 'faker'
   postcode: "E10 6ED",
   email: Faker::Internet.email,
   password: "123456",
-  average_rating: rand(1..5)
+  average_rating: 5
 )
 
 url = "https://res.cloudinary.com/lardocelar/image/upload/v1654685294/user_placeholder_kbf1mr.png"
@@ -26,7 +26,7 @@ photo = URI.open(url)
   postcode: "E12 5DP",
   email: Faker::Internet.email,
   password: "123456",
-  average_rating: rand(1..5)
+  average_rating: 5
 )
 url = "https://res.cloudinary.com/lardocelar/image/upload/v1654685294/user_placeholder_kbf1mr.png"
 photo = URI.open(url)
@@ -41,7 +41,7 @@ photo = URI.open(url)
   postcode: "E6 1BJ",
   email: Faker::Internet.email,
   password: "123456",
-  average_rating: rand(1..5)
+  average_rating: 4
 )
 url = "https://res.cloudinary.com/lardocelar/image/upload/v1654685294/user_placeholder_kbf1mr.png"
 photo = URI.open(url)
@@ -56,7 +56,7 @@ photo = URI.open(url)
   postcode: "E4 8NP",
   email: Faker::Internet.email,
   password: "123456",
-  average_rating: rand(1..5)
+  average_rating: 5
 )
 url = "https://res.cloudinary.com/lardocelar/image/upload/v1654685294/user_placeholder_kbf1mr.png"
 photo = URI.open(url)
@@ -71,7 +71,7 @@ photo = URI.open(url)
   postcode: "E13 0QS",
   email: Faker::Internet.email,
   password: "123456",
-  average_rating: rand(1..5)
+  average_rating: 5
 )
 url = "https://res.cloudinary.com/lardocelar/image/upload/v1654685294/user_placeholder_kbf1mr.png"
 photo = URI.open(url)

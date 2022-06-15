@@ -4,7 +4,8 @@
     </form>
   <br>
   <div class="row">
-    <div class="profile-container col-4">
+    <div class="col-4">
+    <div class="profile-container">
       <div class="profile">
         <div class="profile-image d-flex justify-content-center">
           <% if @user.photo.attached? %>
@@ -15,11 +16,12 @@
         </div>
           <% if @user == current_user %>
             <h2 class="text-center mb-3 mt-3"><%="Your profile"%></h2>
-            <h3>Your Average Rating: <%= @user.average_rating %> </h3>
           <% else %>
             <h2 class="text-center mb-3 mt-3"><%= @user.first_name %>'s profile</h2>
-            <p>Rating: <%= @user.average_rating %></p>
           <% end %>
+          <p class="text-center"><% @user.average_rating.to_i.times do %>
+            <i class="fa-solid fa-star"></i>
+          <% end %></p>
       </div>
 
       <div class="reviews">
@@ -41,6 +43,7 @@
           <% end %>
         <% end %>
       </div>
+    </div>
     </div>
 
     <div class="your-garden col-8">
@@ -72,7 +75,7 @@
                       <i class="fa-solid fa-pen-to-square"></i>
                     </div>
                   <% end %>
-                  <%= link_to plant_path(plant), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+                  <%= link_to plant_path(plant), data: {turbo_method: :delete, controller: "sweet-alert", action: "click->sweet-alert#open", sweet_alert_plant_value: "#{plant.id}"} do %>
                     <div class="user-profile-icon">
                       <i class="fa-solid fa-trash-can"></i>
                     </div>
