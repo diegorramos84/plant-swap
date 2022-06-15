@@ -9,17 +9,19 @@
   border-radius: 16px;
   margin-bottom: 30px;
   margin-top: 30px;
-  background-image: url(shared/back-chat.jpg);
+  background-image: url("back-chat.jpg");
   height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
   h1 {
     border-bottom: 1px solid $gray-200;
     margin-bottom: 0;
     padding: 1rem;
     color: white;
+    font-weight: bolder;
   }
 
   .messages {
@@ -28,6 +30,7 @@
     padding: 1rem;
     font-size: 25px;
     color: white;
+    font-weight: bolder;
   }
 
   #new_message {
@@ -42,4 +45,5 @@
   .chatroom-btn {
     margin-left: 15px;
   }
+
 }
