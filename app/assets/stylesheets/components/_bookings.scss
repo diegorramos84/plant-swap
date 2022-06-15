@@ -7,10 +7,14 @@
   display: flex;
   justify-content: space-between;
   background-color: #F4F4F4;
-  border: 1px solid #1C5252 ;
+  // border: 1px solid #1C5252 ;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   // max-width: 800px;
+}
+
+.booking-card i {
+  color: #A9BA5A
 }
 
 .booking-content {
@@ -34,13 +38,30 @@
   align-content: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .booking-user-action a {
   display: block;
 }
 
-.nav > button {
+.nav-pills .nav-link{
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: black;
-  font-weight: bolder;
+  font-weight: bold;
+  background-color: #FFB7BC;
+  font-family: "Quicksand";
+  // border: 0.5px solid black;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: black;
 }
