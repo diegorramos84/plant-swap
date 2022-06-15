@@ -9,9 +9,9 @@
       <div class="profile">
         <div class="profile-image d-flex justify-content-center">
           <% if @user.photo.attached? %>
-              <%= cl_image_tag @user.photo.key %>
+              <%= cl_image_tag @user.photo.key, :width=>150, :height=>150, :crop=>"fill" %>
             <% else %>
-              <%= image_tag("https://res.cloudinary.com/lardocelar/image/upload/v1654685294/user_placeholder_kbf1mr.png") %>
+              <%= image_tag("https://res.cloudinary.com/lardocelar/image/upload/v1654685294/user_placeholder_kbf1mr.png", :width=>150, :height=>300, :crop=>"fill") %>
           <% end %>
         </div>
           <% if @user == current_user %>
@@ -60,7 +60,7 @@
             <%= link_to plant_path(plant) do %>
               <div class="plant-garden-picture">
                 <% if plant.photo.attached? %>
-                  <%= cl_image_tag plant.photo.key, height: 250, width: 250 %>
+                  <%= cl_image_tag plant.photo.key, height: 200, width: 250 %>
                 <% end %>
               </div>
             <% end %>
