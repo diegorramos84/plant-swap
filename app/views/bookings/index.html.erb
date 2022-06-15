@@ -46,7 +46,9 @@
                 </div>
 
                 <div class="actions-message pb-0 text-center">
-                  <% if booking.buy_status == 'accepted' || booking.buy_status == 'completed'  %>
+                  <% if booking.buy_status == 'pending'%>
+                    <p></p>
+                  <% elsif booking.buy_status == 'accepted' || booking.buy_status == 'completed'  %>
                     <p><strong>You approved this booking</strong></p>
                   <% else booking.buy_status == 'rejected' %>
                     <p><strong>You rejected this booking</strong></p>
