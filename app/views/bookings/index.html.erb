@@ -65,7 +65,7 @@
                     <p><strong>Plant owner: </strong><%= "#{booking.plant.user.first_name} #{booking.plant.user.last_name}"%></p>
                     <p><strong>Quantity: </strong><%= booking.booking_quantity%></p>
                     <p><strong>Order Status: </strong><%= booking.buy_status%></p>
-                    <% if booking.buy_status == "pending"%>
+                    <% if booking.buy_status == "completed" && booking.review.blank? %>
                       <%= link_to "Add a review", new_booking_review_path(booking), class: "pink-btn" %>
                     <% end %>
                      <%# <% if booking.buy_status == "pending" %>
