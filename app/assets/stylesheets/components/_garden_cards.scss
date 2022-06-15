@@ -1,12 +1,14 @@
 .plant-card-garden {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   width: 250px;
+  height: auto;
   background-color: white;
   text-decoration: none;
 }
 
+
 .your-garden .card-grid {
-  flex-grow: 1;
+  flex-grow: 0;
   display: flex;
   grid-gap: 32px;
   flex-wrap: wrap;
