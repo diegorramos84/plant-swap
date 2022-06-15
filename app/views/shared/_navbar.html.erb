@@ -25,7 +25,7 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item dropdown nav-centre">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown">Welcome <%= current_user.username %></a>
+            <a class="nav-link" href="#" data-bs-toggle="dropdown">Welcome <%= current_user.first_name %></a>
             <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <%# <%= image_tag "Avatar_green-01.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
