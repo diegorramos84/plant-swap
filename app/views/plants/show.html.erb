@@ -1,9 +1,11 @@
 <div class="container-xxl">
   <br>
-    <form class="plant-show-header" style="margin-bottom: 30px;">
-      <input type="button" value="Back" onclick="history.back()" class="pink-btn">
-      <h1 class="text-center" style="margin-left: 470px;"><%= @plant.common_name %></i></h1>
+  <div style="margin-bottom: 30px;">
+    <form class="plant-show-header">
+      <input type="button" value="<" onclick="history.back()" class="back-btn">
     </form>
+     <h1 class="text-center"><%= @plant.common_name %></i></h1>
+  </div>
   <br>
   <div class="plant-show-container">
     <div class="container-label-img">
