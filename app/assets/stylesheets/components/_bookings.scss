@@ -17,6 +17,10 @@
   color: #A9BA5A
 }
 
+.bg-success {
+  background-color: #567B1E!important;
+}
+
 .booking-content {
   flex-grow: 1;
   padding-left: 10px;
@@ -29,7 +33,7 @@
 }
 
 .booking-image img {
-  border-radius: 0.25rem;
+  object-fit: cover;
 }
 
 .booking-user-action {
@@ -40,6 +44,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+
 }
 
 .booking-user-action a {
@@ -65,3 +70,11 @@
 .nav-link:hover, .nav-link:focus {
   color: black;
 }
+
+#accept-marker i {
+ color: #567B1E
+}
+
+#reject-marker i {
+  color: #FD1015
+ }

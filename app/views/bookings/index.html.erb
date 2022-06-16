@@ -1,11 +1,11 @@
 <div class="container mb-3">
   <form class="mt-3 mb-3">
-    <input type="button" value="Back" onclick="history.back()" class="pink-btn">
+    <input type="button" value="<" onclick="history.back()" class="back-btn">
   </form>
   <nav>
     <div class="nav nav-pills" id="nav-tab" role="tablist">
-      <button class="nav-link fade show active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">My plant's bookings</button>
-      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Plants I've ordered</button>
+      <button class="nav-link fade show active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Plants</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Orders</button>
     </div>
      <br>
   </nav>
@@ -21,21 +21,25 @@
                 <% end %>
               </div>
               <div class="booking-content">
-                <p><strong>Plant name: </strong><%= booking.plant.common_name %></p>
+                <p><strong>Name: </strong><%= booking.plant.common_name %></p>
                 <p><strong>Requested by: </strong><%= "#{booking.user.first_name} #{booking.user.last_name}"%></p>
                 <p><strong>Quantity: </strong><%= booking.booking_quantity%></p>
                 <p><strong>Order Status: </strong><%= booking.buy_status%></p>
-                <p><strong>Amount of plants left: </strong><%= booking.plant.quantity%></p>
+                <p><strong>Plants left: </strong><%= booking.plant.quantity%></p>
               </div>
               <div class="booking-user-action">
                 <div class="action-icons">
                   <% if booking.buy_status == 'pending' %>
+                    <div id="accept-marker">
                     <%= link_to reply_buy_path(booking, status: 'accepted') do %>
                       <i class="fa-solid fa-check"></i>
+                    </div>
                     <% end %>
+                    <div id="reject-marker">
                     <%= link_to reply_buy_path(booking, status: 'rejected') do %>
                       <i class="fa-solid fa-xmark"></i>
                       <% end %>
+                    </div>
                   <% end %>
 
                   <% if booking.chatroom != nil%>
@@ -49,9 +53,9 @@
                   <% if booking.buy_status == 'pending'%>
                     <p></p>
                   <% elsif booking.buy_status == 'accepted' || booking.buy_status == 'completed'  %>
-                    <p><strong>You approved this booking</strong></p>
+                    <p class="badge rounded-pill bg-success">Approved</p>
                   <% else booking.buy_status == 'rejected' %>
-                    <p><strong>You rejected this booking</strong></p>
+                    <p class="badge rounded-pill bg-danger">Rejected</p>
                   <% end %>
                 </div>
 
@@ -72,8 +76,8 @@
                     <% end %>
                   </div>
                   <div class="booking-content">
-                    <p><strong>Plant name: </strong><%= booking.plant.common_name %></p>
-                    <p><strong>Plant owner: </strong><%= "#{booking.plant.user.first_name} #{booking.plant.user.last_name}"%></p>
+                    <p><strong>Name: </strong><%= booking.plant.common_name %></p>
+                    <p><strong>Owner: </strong><%= "#{booking.plant.user.first_name} #{booking.plant.user.last_name}"%></p>
                     <p><strong>Quantity: </strong><%= booking.booking_quantity%></p>
                     <p><strong>Order Status: </strong><%= booking.buy_status%></p>
                     <% if booking.buy_status == "completed" && booking.review.blank? %>
