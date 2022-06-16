@@ -60,9 +60,10 @@
             <%= cl_image_tag plant.photo.key, :width=>306, :height=>250, :crop=>"fill" %>
           <% end %>
           <div class= "plant-info">
-            <h4>Common name: <%= plant.common_name %></h4>
-            <h4>Category: <%= plant.category %></h4>
-            <h4>Type: <%= plant.plant_type %></h4>
+            <h5><%= plant.common_name %></h5>
+            <h4><strong>Category:</strong> <%= plant.category %></h4>
+            <h4><strong>Type:</strong> <%= plant.plant_type %></h4>
+            <h4><strong>Quantity:</strong> <%= plant.quantity %></h4>
           </div>
         </div>
       <% end %>
