@@ -6,6 +6,10 @@
   padding-bottom: 10px;
 }
 
+.full-card img {
+  object-fit: cover;
+}
+
 .plant-card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -15,12 +19,20 @@
 }
 
 .plant-card h3 {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 25px;
   margin: 0;
   color: #1A3263;
-  font-size: 25px;
   padding-bottom: 10px;
+}
+
+.plant-card h4 {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 15px;
 }
 
 // .plant-card p {
@@ -32,7 +44,7 @@
 
 
 .plant-card .plant-info {
-  padding: 16px;
+  padding-left: 16px;
   align-items: flex-end;
   position: relative;
 }

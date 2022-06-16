@@ -5,12 +5,13 @@
         <%= link_to plant_path(plant), class: "text-decoration-none" do %>
           <div class="full-card">
             <% if plant.photo.attached? %>
-              <%= cl_image_tag plant.photo.key, :width=>306, :height=>250, :crop=>"fill" %>
+              <%= cl_image_tag plant.photo.key, :width=>306, :height=>250 %>
             <% end %>
             <div class= "plant-info">
-              <h3>Common name: <%= plant.common_name %></h3>
-              <h3>Category: <%= plant.category %></h3>
-              <h3>Type: <%= plant.plant_type %></h3>
+              <h4><%= plant.common_name %></h4>
+              <h3><strong>Category:</strong> <%= plant.category %></h3>
+              <h3><strong>Type:</strong> <%= plant.plant_type %></h3>
+              <h3><strong>Quantity:</strong> <%= plant.quantity %></h3>
             </div>
           </div>
         <% end %>
