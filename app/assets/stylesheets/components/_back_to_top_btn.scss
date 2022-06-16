@@ -1,0 +1,37 @@
+.top-page-btn {
+	text-align:center;
+	font-size:180%;
+	margin:2em;
+	font-family: Calibri, arial, sans-serif;
+  color: #fc9ea4;
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:#fc9ea4;
+	text-decoration:none;
+	transition:all .3s ease-out;
+  margin-left: 550px;
+}
+
+.top-page-btn:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em white;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.top-page-btn:hover{
+	color: #fa949b;
+	border-color: #fa949b;
+}
+.top-page-btn:hover:before{
+	transform: rotate(360deg);
+}
