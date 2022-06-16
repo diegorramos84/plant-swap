@@ -61,9 +61,9 @@
               </div>
             <% end %>
             <div class="garden-plant-info">
-              <p><strong>Plant name: </strong><%= plant.common_name %></p>
-              <p><strong>Plant type: </strong><%= plant.plant_type %></p>
-              <p><strong>Amount of plants left: </strong><%= plant.quantity%></p>
+              <p><strong><%= plant.common_name %></strong></p>
+              <p><strong>Type: </strong><%= plant.plant_type %></p>
+              <p><strong>Amount left: </strong><%= plant.quantity%></p>
               <div class="garden-user-actions">
                 <% if plant.user == current_user %>
                   <%= link_to edit_plant_path(plant) do %>
