@@ -1,9 +1,13 @@
 .your-garden-heading {
   background: url('image/kindpng_1704625.png');
+  display: flex;
 
   .fa-solid {
     font-size: 28px;
   }
+}
+.your-garden-heading h1 {
+  margin-left: 525px;
 }
 
 .profile-container {
