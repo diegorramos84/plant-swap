@@ -67,7 +67,9 @@
               </div>
             <% end %>
             <div class="garden-plant-info">
-              <p><strong><%= plant.common_name %></strong></p>
+              <div class="profile-card-name">
+                <p><strong><%= plant.common_name %></strong></p>
+              </div>
               <p><strong>Type: </strong><%= plant.plant_type %></p>
               <p><strong>Amount left: </strong><%= plant.quantity%></p>
               <div class="garden-user-actions">
