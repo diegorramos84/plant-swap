@@ -20,9 +20,9 @@ class BookingsController < ApplicationController
   end
 
   def index
-    @bookings = Booking.where(user: current_user)
+    @bookings = Booking.where(user: current_user).order(created_at: :desc)
     @plants = Plant.where(user: current_user)
-    @bookings_seller = Booking.joins(:plant).where(plant: { user_id: current_user })
+    @bookings_seller = Booking.joins(:plant).where(plant: { user_id: current_user }).order(created_at: :desc)
   end
 
   def booking_params
