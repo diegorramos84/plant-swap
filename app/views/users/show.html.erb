@@ -1,16 +1,17 @@
 <div class="container-xxl mt-4">
-  <div class="row">
-    <div class="your-garden col-8">
-      <div class="your-garden-heading">
-        <div type="button" class="return-btn" onclick="history.back()">
+  <div type="button" class="return-btn" onclick="history.back()">
           <i class="fa-solid fa-arrow-left"></i>
         </div>
-        <% if @user == current_user %>
-          <h1 class="text-center mb-3 mt-n1">Your garden</i></h1>
-        <% else %>
-          <h1 class="text-center mb-3 mt-n1"><%= @user.first_name %>'s garden</i></h1>
-        <% end %>
-      </div>
+
+  <div class="row">
+    <div class="your-garden col-8">
+        <div class="profile-heading">
+          <% if @user == current_user %>
+            <h1 class="text-center mb-3 mt-n1">Your garden</i></h1>
+          <% else %>
+            <h1 class="text-center mb-3 mt-n1"><%= @user.first_name %>'s garden</i></h1>
+          <% end %>
+        </div>
     </div>
   </div>
 
