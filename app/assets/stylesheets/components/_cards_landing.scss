@@ -15,13 +15,21 @@
 }
 
 .plant-card-landing h4 {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 28px;
   margin: 0;
   color: #1A3263;
-  font-size: 25px;
   padding-bottom: 10px;
   font-family: 'Amatic SC', cursive;
+}
+
+.plant-card-landing h5 {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 10px;
 }
 
 // .plant-card p {
