@@ -1,13 +1,16 @@
 .your-garden-heading {
   background: url('image/kindpng_1704625.png');
   display: flex;
+  flex-grow: 1;
 
   .fa-solid {
     font-size: 28px;
   }
 }
-.your-garden-heading h1 {
-  margin-left: 525px;
+.profile-heading h1 {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
 }
 
 .profile-container {
@@ -57,4 +60,12 @@
   & p:last-child {
     margin-bottom: 0;
   }
+}
+
+.profile-card-name p {
+  text-align: center;
+}
+
+.reviews h3 {
+  font-size: 30px;
 }

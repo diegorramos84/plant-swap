@@ -10,7 +10,8 @@
 	border-color:#fc9ea4;
 	text-decoration:none;
 	transition:all .3s ease-out;
-  margin-left: 550px;
+  display: flex;
+  justify-content: center;
 }
 
 .top-page-btn:before{
