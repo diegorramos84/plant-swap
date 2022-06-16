@@ -9,18 +9,18 @@
   border-radius: 16px;
   margin-bottom: 30px;
   margin-top: 30px;
-  background-image: url("shared/back-chat.jpg");
+  background-image: url("chatroom-pic.png");
   height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  // position: relative;
 
   h1 {
     border-bottom: 1px solid $gray-200;
     margin-bottom: 0;
     padding: 1rem;
-    color: white;
+    color: black;
     font-weight: bolder;
   }
 
@@ -29,7 +29,7 @@
     overflow: scroll;
     padding: 1rem;
     font-size: 25px;
-    color: white;
+    color: black;
     font-weight: bolder;
   }
 
