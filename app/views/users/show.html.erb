@@ -1,22 +1,8 @@
 <div class="container-xxl mt-4">
-  <div type="button" class="return-btn" onclick="history.back()">
-          <i class="fa-solid fa-arrow-left"></i>
-        </div>
-
-  <div class="row">
-    <div class="your-garden col-8">
-        <div class="profile-heading">
-          <% if @user == current_user %>
-            <h1 class="text-center mb-3 mt-n1">Your garden</i></h1>
-          <% else %>
-            <h1 class="text-center mb-3 mt-n1"><%= @user.first_name %>'s garden</i></h1>
-          <% end %>
-        </div>
+    <div type="button" class="return-btn" onclick="history.back()">
+      <i class="fa-solid fa-arrow-left"></i>
     </div>
-  </div>
-
   <br>
-
   <div class="row">
     <div class="col-4">
     <div class="profile-container">
@@ -57,6 +43,13 @@
     </div>
 
     <div class="your-garden col-8">
+      <div class="your-garden-heading">
+        <% if @user == current_user %>
+          <h1 class="text-center mb-3 mt-n1">Your garden</i></h1>
+        <% else %>
+          <h1 class="text-center mb-3 mt-n1"><%= @user.first_name %>'s garden</i></h1>
+        <% end %>
+      </div>
       <div class="card-grid">
         <% @user.plants.each do |plant| %>
           <div class="plant-card-garden mb-3">
@@ -68,9 +61,7 @@
               </div>
             <% end %>
             <div class="garden-plant-info">
-              <div class="profile-card-name">
-                <p><strong><%= plant.common_name %></strong></p>
-              </div>
+              <p><strong><%= plant.common_name %></strong></p>
               <p><strong>Type: </strong><%= plant.plant_type %></p>
               <p><strong>Amount left: </strong><%= plant.quantity%></p>
               <div class="garden-user-actions">
