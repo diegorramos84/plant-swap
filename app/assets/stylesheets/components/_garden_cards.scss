@@ -10,7 +10,7 @@
 .your-garden .card-grid {
   flex-grow: 0;
   display: flex;
-  grid-gap: 32px;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
