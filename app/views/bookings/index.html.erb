@@ -25,11 +25,16 @@
                 <p><strong>Name: </strong><%= booking.plant.common_name %></p>
                 <p><strong>Requested by: </strong><%= "#{booking.user.first_name} #{booking.user.last_name}"%></p>
                 <p><strong>Quantity: </strong><%= booking.booking_quantity%></p>
-                <p><strong>Order Status: </strong><%= booking.buy_status%></p>
+                <p><strong>Ordered on: </strong><%= booking.created_at.strftime("%a, %b %e")%></p>
                 <p><strong>Plants left: </strong><%= booking.plant.quantity%></p>
               </div>
               <div class="booking-user-action">
                 <div class="action-icons">
+                  <% if booking.chatroom != nil%>
+                    <%= link_to "/bookings/#{booking.id}/chatrooms/#{booking.chatroom.id}" do %>
+                        <i class="fa-solid fa-message"></i>
+                    <% end %>
+                  <% end %>
                   <% if booking.buy_status == 'pending' %>
                     <div id="accept-marker">
                     <%= link_to reply_buy_path(booking, status: 'accepted') do %>
@@ -42,24 +47,16 @@
                       <% end %>
                     </div>
                   <% end %>
-
-                  <% if booking.chatroom != nil%>
-                    <%= link_to "/bookings/#{booking.id}/chatrooms/#{booking.chatroom.id}" do %>
-                        <i class="fa-solid fa-message"></i>
-                    <% end %>
-                  <% end %>
                 </div>
-
                 <div class="actions-message pb-0 text-center">
                   <% if booking.buy_status == 'pending'%>
-                    <p></p>
+                    <p class="badge rounded-pill bg-warning">Pending</p>
                   <% elsif booking.buy_status == 'accepted' || booking.buy_status == 'completed'  %>
                     <p class="badge rounded-pill bg-success">Approved</p>
                   <% else booking.buy_status == 'rejected' %>
                     <p class="badge rounded-pill bg-danger">Rejected</p>
                   <% end %>
                 </div>
-
               </div>
             </div>
           </div>
@@ -80,7 +77,7 @@
                     <p><strong>Name: </strong><%= booking.plant.common_name %></p>
                     <p><strong>Owner: </strong><%= "#{booking.plant.user.first_name} #{booking.plant.user.last_name}"%></p>
                     <p><strong>Quantity: </strong><%= booking.booking_quantity%></p>
-                    <p><strong>Order Status: </strong><%= booking.buy_status%></p>
+                    <p><strong>Ordered on: </strong><%= booking.created_at.strftime("%a, %b %e")%></p>
                     <% if booking.buy_status == "completed" && booking.review.blank? %>
                       <%= link_to "Add a review", new_booking_review_path(booking), class: "pink-btn" %>
                     <% end %>
@@ -90,14 +87,22 @@
                     <%# <% end %>
                   </div>
                   <div class="booking-user-action">
-                    <% if booking.chatroom != nil%>
-                      <%= link_to "/bookings/#{booking.id}/chatrooms/#{booking.chatroom.id}" do %>
-                        <i class="fa-solid fa-message"></i>
+                    <div class="action-icons">
+                      <% if booking.chatroom != nil%>
+                        <%= link_to "/bookings/#{booking.id}/chatrooms/#{booking.chatroom.id}" do %>
+                          <i class="fa-solid fa-message"></i>
+                        <% end %>
                       <% end %>
-                    <% end %>
-                    <%# <%=link_to plants_path do %>
-                      <%# <i class="fa-solid fa-trash-can"></i> %>
-                    <%# <% end %>
+                    </div>
+                    <div class="actions-message pb-0 text-center">
+                      <% if booking.buy_status == 'pending'%>
+                        <p class="badge rounded-pill bg-warning">Pending</p>
+                      <% elsif booking.buy_status == 'accepted' || booking.buy_status == 'completed'  %>
+                        <p class="badge rounded-pill bg-success">Approved</p>
+                      <% else booking.buy_status == 'rejected' %>
+                        <p class="badge rounded-pill bg-danger">Rejected</p>
+                      <% end %>
+                    </div>
                   </div>
                 </div>
               </div>
