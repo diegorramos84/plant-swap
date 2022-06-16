@@ -12,7 +12,6 @@
   display: flex;
   grid-gap: 32px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .plant-card-garden:hover {
@@ -29,4 +28,8 @@
   &:hover {
     color: #fdd4d7;
   }
+}
+
+.plant-garden-picture img{
+  object-fit: cover;
 }
