@@ -14,18 +14,14 @@
               <%= image_tag("Avatar_green-01.png", :width=>150, :height=>150, :crop=>"fill") %>
           <% end %>
         </div>
-          <% if @user == current_user %>
-            <h2 class="text-center mb-3 mt-3"><%="Your profile"%></h2>
-          <% else %>
-            <h2 class="text-center mb-3 mt-3"><%= @user.first_name %>'s profile</h2>
-          <% end %>
+          <h2 class="text-center mb-3 mt-3"><%= @user.first_name %>'s profile</h2>
           <p class="text-center"><% @user.average_rating.to_i.times do %>
             <i class="fa-solid fa-star"></i>
           <% end %></p>
       </div>
 
       <div class="reviews">
-        <h2>Reviews</h2>
+        <h3>Reviews</h3>
         <% @user.plants.each do |plant| %>
           <% plant.bookings.each do |booking| %>
             <% if booking.review != nil %>
