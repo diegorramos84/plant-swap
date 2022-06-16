@@ -43,13 +43,13 @@
     </div>
 
     <div class="your-garden col-8">
-      <div class="your-garden-heading">
+      <%# <div class="your-garden-heading">
         <% if @user == current_user %>
-          <h1 class="text-center mb-3 mt-n1">Your garden</i></h1>
-        <% else %>
-          <h1 class="text-center mb-3 mt-n1"><%= @user.first_name %>'s garden</i></h1>
-        <% end %>
-      </div>
+          <%# <h1 class="text-center mb-3 mt-n1">Your garden</i></h1> %>
+        <%# <% else %>
+          <%# <h1 class="text-center mb-3 mt-n1"><%= @user.first_name's garden</i></h1>  %>
+        <%# <% end %>
+      <%# </div> %>
       <div class="card-grid">
         <% @user.plants.each do |plant| %>
           <div class="plant-card-garden mb-3">
