@@ -9,6 +9,11 @@
       <% if @plant.photo.attached? %>
         <%= cl_image_tag @plant.photo.key, height: 500, width: 600 %>
       <% end %>
+      <%# <div class="overlay"> %>
+        <%= link_to user_path(@user) do %>
+          <%= cl_image_tag @user.photo.key, class: 'image-show-avatar' %>
+        <% end %>
+      <%# </div> %>
     </div>
     <div class="container-label-info">
       <p><strong>Category:</strong> <%= @plant.category %></p>
@@ -24,8 +29,8 @@
       <p><strong>Light conditions:</strong> <%= @plant.light_conditions %></p>
       <p><strong>Mature height:</strong> <%= @plant.mature_height %>cm</p>
       <p><strong>Quantity:</strong> <%= @plant.quantity %></p>
-      <%= link_to "Order this #{@plant.common_name}", new_plant_booking_path(@plant), class: "pink-btn" %>
-      <%= link_to "View #{@plant.user.first_name} #{@plant.user.last_name}'s profile", user_path(@user), class: "pink-btn" %></p>
+      <%= link_to "Order plant", new_plant_booking_path(@plant), class: "pink-btn" %>
+      <%# <%= link_to "View #{@plant.user.first_name} #{@plant.user.last_name}'s profile", user_path(@user), class: "pink-btn" %>
     </div>
 
   </div>
