@@ -1,9 +1,10 @@
-.back-btn {
+.return-btn {
   text-decoration: none;
   display: inline-block;
-  padding: 8px 16px;
   border-radius: 50%;
-  background-color: #FFB7BC;
+  color: #FCD5B7;
+  font-size: 40px;
+  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
 }
 
 .back-btn:hover {
