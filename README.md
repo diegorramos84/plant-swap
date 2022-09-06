@@ -1,7 +1,9 @@
 # Plant swap
 The aim of this project was to build a community where people could exchange plants locally
 
-![image](https://user-images.githubusercontent.com/17050237/176482292-fe728742-29d7-4cfc-a1f4-c163622e1c28.png)
+## Live demo
+  [![Live demo](https://img.youtube.com/vi/ZYcKmFF9lB0/0.jpg)](https://www.youtube.com/watch?v=ZYcKmFF9lB0)
+
 
 ## Features
 * User authentication
